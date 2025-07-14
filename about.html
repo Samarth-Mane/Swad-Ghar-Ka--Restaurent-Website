@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me</title>
+  <style>
+    
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background-color: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .about-container {
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .about-left, .about-right {
+      flex: 1 1 400px;
+      padding: 2rem;
+    }
+
+    .about-left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #e5e7eb;
+    }
+
+    .about-left img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .about-right h2 {
+      font-size: 2rem;
+      color: #2563eb;
+      margin-bottom: 0.5rem;
+    }
+
+    .about-right h4 {
+      color: #6b7280;
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      height: 24px;
+    }
+
+    .about-right p {
+      font-size: 1rem;
+      color: #374151;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .about-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-left {
+        padding-bottom: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="about-container">
+    <!-- Left Side Image -->
+    <div class="about-left">
+    <img src="image.jpeg" alt="My Image">
+    </div>
+
+    <!-- Right Side Content -->
+    <div class="about-right">
+      <h2>Hi, I'm Samarth Mane</h2>
+      <h4 id="typing-text">"Web Developer | Designer | Tech Enthusiast"</h4>
+      <p>
+        I'm a passionate web developer who loves building interactive and responsive websites. This project is fully developed by me to showcase my learning and creativity using just HTML, CSS, and JavaScript.
+      </p>
+      <p>
+        I'm always exploring new technologies and frameworks to stay up-to-date with the latest trends. Feel free to explore the site and check out my work.
+      </p>
+    </div>
+  </div>
+
+  <!-- JS Typing Effect -->
+  <script>
+    // const text = "Web Developer | Designer | Tech Enthusiast";
+    // const typingText = document.getElementById("typing-text");
+    // let index = 0;
+
+    // function type() {
+    //   typingText.textContent = text.slice(0, index++);
+    //   if (index <= text.length) {
+    //     setTimeout(type, 100);
+    //   }
+    // }
+
+    // window.onload = type;
+  </script>
+
+</body>
+</html>
