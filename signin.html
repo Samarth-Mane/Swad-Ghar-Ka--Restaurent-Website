@@ -1,62 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-in</title>
-    <link rel="stylesheet" href="sign-in.css">
+  <title>Sign-In Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Garamond, serif;
+      background-color: #f0f2f5;
+    }
+
+    .container {
+        margin-top: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      height: 92vh;
+    }
+
+    .sign {
+      width: 30%;
+      background-color: #ffffff;
+      padding: 30px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      border-bottom-left-radius: 40px;
+      border-top-left-radius: 5px;
+
+
+    }
+
+    .info-box {
+      width: 30%;
+      background: linear-gradient(135deg, #FF6B6B, #6699cf);
+      color: white;
+      padding: 50px 30px;
+      display: flex;
+      border-top-right-radius: 40px;
+      border-bottom-right-radius: 5px;
+
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .info-box h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .info-box p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .input-container {
+      margin-bottom: 15px;
+    }
+
+    .input-container span {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .input-container img {
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    .input-container input {
+      width: 90%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .submit-btn {
+      padding: 10px 20px;
+      background-color: #2a5298;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #1e3c72;
+    }
+
+    .img button {
+      margin: 5px;
+      padding: 5px 10px;
+      background-color: white;
+      border: 1px solid #ddd;
+      cursor: pointer;
+    }
+
+    .img button:hover {
+      background-color: #f3f3f3;
+    }
+
+    .msg {
+      color: red;
+    }
+  </style>
 </head>
 <body>
-    <div class="sign">
-        <p style="text-align: start; font-size:30px; font-family:Garamond;"><b>Sign-in</b></p>
-        <p style="text-align: start; font-size: small;">
-            Don't have an Account Create new Account
-        </p>
-        <div class="details"><br>
-            <div class="input-container">
-                <span>First name</span>
-                <img src="name.jpeg" alt="User Icon">
-                <input type="text" placeholder="First Name">
-            </div>  
-            <div class="input-container">
-                <span>Last name</span>
-                <img src="name.jpeg" alt="User Icon">
-                <input type="text" placeholder="Last Name">
-            </div>       
-            <div class="input-container">
-                <span>Email Address</span>
-                <img src="email1.jpeg" alt="User Icon">
-                <input type="email" placeholder="Email">
-            </div> 
-            <div class="input-container">
-                <span>Password</span>
-                <img src="password.jpeg" alt="User Icon">
-                <input type="password" id="pass" placeholder="Password">
-            </div>
-            <div class="input-container">
-                <span>Confirm Password</span>
-                <img src="password.jpeg" alt="User Icon">
-                <input type="password" id="pass1" placeholder="Confirm Password">
-            </div>  
-            <p class="msg" id="msg"></p>                                                
-        <button onclick="check()" type="submit" class="submit-btn">Sign-Up</button><br>
 
-        <p style="text-align:center"> Or Sign-in With.</p><br>
-        <div class="img" >
-            <button style="border-radius: 2px;">
-            <a href="www.google.com"><img src="https://static.vecteezy.com/system/resources/previews/013/760/951/non_2x/colourful-google-logo-in-dark-background-free-vector.jpg" alt="Google" style="height: 25px; width: 25px; background-color: aqua; margin-top: 4px;"></a>
-            <span style=" border-radius: 5px; font-size: 18px; top: 12px;">Google</span></button>
-            <button style="border-radius: 2px;">
-            <a href="http://www.facebook.com/"><img src="https://1.bp.blogspot.com/-AoUqLhc-7Bg/Xyq1zDdXjaI/AAAAAAAABn8/WmSTA1WKDf0wl5-9qbSEtfnTwHJ7SKMtwCLcBGAsYHQ/s886/Facebook%2B%255Bblogovector.com%255D.png" alt="Facebook" style="height: 25px; width: 25px; background-color: aqua; margin-top: 4px;"></a>
-            <span style="border-radius: 5px; font-size: 18px;">Facebook</span></button>
-            <button style="border-radius: 2px;">
-            <a href="www.x.com"><img src="https://static.vecteezy.com/system/resources/previews/027/395/710/original/twitter-brand-new-logo-3-d-with-new-x-shaped-graphic-of-the-world-s-most-popular-social-media-free-png.png" alt="X(Twitter)" style="height: 25px; width: 25px; margin-top: 4px;"></a>
-            <span style="border-radius: 5px; font-size: 18px;">X/Twitter</span></button>
-        </div>
-        </div>
+<div class="container">
+
+  <!-- Sign-in Form Section -->
+  <div class="sign">
+    <p style="text-align: start; font-size:30px;"><b>Sign-in</b></p>
+    <p style="text-align: start; font-size: small;">Don't have an account? Create a new one.</p>
+
+    <div class="details"><br>
+      <div class="input-container">
+        <span>First name</span>
+        <img src="name.jpeg" alt="User Icon">
+        <input type="text" placeholder="First Name">
+      </div>  
+      <div class="input-container">
+        <span>Last name</span>
+        <img src="name.jpeg" alt="User Icon">
+        <input type="text" placeholder="Last Name">
+      </div>       
+      <div class="input-container">
+        <span>Email Address</span>
+        <img src="email1.jpeg" alt="User Icon">
+        <input type="email" placeholder="Email">
+      </div> 
+      <div class="input-container">
+        <span>Password</span>
+        <img src="password.jpeg" alt="User Icon">
+        <input type="password" id="pass" placeholder="Password">
+      </div>
+      <div class="input-container">
+        <span>Confirm Password</span>
+        <img src="password.jpeg" alt="User Icon">
+        <input type="password" id="pass1" placeholder="Confirm Password">
+      </div>  
+      
+      <p class="msg" id="msg"></p>                                                
+
+      <button onclick="check()" type="submit" class="submit-btn">Sign-Up</button><br>
+
+      <p style="text-align:center; margin-top: 10px;">Or Sign-in With</p>
+
+      <div class="img">
+        <button>
+          <a href="https://www.google.com"><img src="https://static.vecteezy.com/system/resources/previews/013/760/951/non_2x/colourful-google-logo-in-dark-background-free-vector.jpg" alt="Google" style="height: 25px; width: 25px;"></a>
+          <span style="font-size: 18px;">Google</span>
+        </button>
+        <button>
+          <a href="https://www.facebook.com"><img src="https://1.bp.blogspot.com/-AoUqLhc-7Bg/Xyq1zDdXjaI/AAAAAAAABn8/WmSTA1WKDf0wl5-9qbSEtfnTwHJ7SKMtwCLcBGAsYHQ/s886/Facebook%2B%255Bblogovector.com%255D.png" alt="Facebook" style="height: 25px; width: 25px;"></a>
+          <span style="font-size: 18px;">Facebook</span>
+        </button>
+        <button>
+          <a href="https://www.x.com"><img src="https://static.vecteezy.com/system/resources/previews/027/395/710/original/twitter-brand-new-logo-3-d-with-new-x-shaped-graphic-of-the-world-s-most-popular-social-media-free-png.png" alt="X/Twitter" style="height: 25px; width: 25px;"></a>
+          <span style="font-size: 18px;">X/Twitter</span>
+        </button>
+      </div>
     </div>
+  </div>
 
-    <script>
+  <!-- Info Section -->
+  <div class="info-box">
+    <h1>Welcome to Swad Ghar Ka!</h1>
+    <p>
+      Discover the joy of authentic Indian homemade food. Sign up to explore our specially curated thali options, manage your orders, and enjoy a delightful dining experience — just like home!
+    </p>
+  </div>
+
+</div>
+
+<script>
+  function check() {
+    let pass = document.getElementById("pass").value.trim();
+    let pass1 = document.getElementById("pass1").value.trim();
+    let msg = document.getElementById("msg"); 
+    msg.style.fontSize = "13px";
+    msg.style.margin = "8px 0";
+
+    if (pass === "" || pass1 === "") {
+      msg.textContent = "⚠️ Password fields cannot be empty.";
+      msg.style.color = "orange";
+    } else if (pass !== pass1) {
+      msg.textContent = "❌ Passwords do not match.";
+      msg.style.color = "red";
+    } else {
+      msg.textContent = "✅ Account successfully created!";
+      msg.style.color = "green";
+    }
+  }
+</script>
+<script>
             function check() {
             let pass = document.getElementById("pass").value.trim();
             let pass1 = document.getElementById("pass1").value.trim();
@@ -68,12 +205,12 @@
                 msg.textContent = "Password and Confirm Password do not match!";
                 msg.style.color = "red"; 
             } else {
-                msg.textContent = "";
+                msg.textContent = "Successfully Account Created";
                 msg.style.color = "green"; 
             }
         }
 
     </script>
-    
+
 </body>
 </html>
