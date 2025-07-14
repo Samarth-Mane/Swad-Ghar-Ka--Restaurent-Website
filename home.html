@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header style="background-color: white;">
+        <div class="img">
+            <img style="padding-left:35px;height:70px; width:200px; border-radius: 1px;"src="logo1.png" alt="logo">
+            <div class="head">
+                <div class="links"><a href="about.html">About</a></div>
+                <div class="links"><a href="order.html">Reviews</a></div>
+                <div class="links"><a href="contact.html">Contact Us</a></div>
+                <div class="links"><a href="rush.html">Rush_Hours</a></div>
+                <div class="links"><a href="mess.html">Mess_Section</a></div>
+                <div class="link"><a href="orderdet.html" style="margin:0%;"><img src="lunch/cart.jpg" alt="Add To Cart" style="height: 32px; width: 32px; border: 0.5 crimson solid; margin-bottom: 12px; border-radius: 50%; background-color: grey;"></a></div>
+                <!---<div class="links" style=" height: 2px; width: 2px; border-radius: 50px; border: 2px black solid;"><img src="images/cart.png" alt="Cart"></div>--->
+            </div>
+        </div>
+    </header><br>
+    
+    <div class="top_items">
+    <p style="font-size: 25px; font-family: Verdana, Geneva, Tahoma, sans-serif; margin-bottom: 12px;">Heaven Starts Here</p>
+      <button onclick="toggleTheme()">Toggle Theme</button>
+
+    <div class="grid">
+        <div class="grid_item">
+            <a href="#idli"><img  src="images/idli.jpg" alt="Idli" ></a>
+            <span><b>Idli</b></span>
+        </div>
+        <div class="grid_item">
+            <a href="#dosa"><img src="images/dosa.jpeg" alt="Dosa"></a>
+            <span><b>Dosa</b></span>
+        </div>
+        <div class="grid_item">
+            <a href="#paneer"><img src="images/paneer.jpg" alt="Paneer"></a>
+            <span><b>Shahi Paneer</b></span>
+        </div>
+        <div class="grid_item">
+            <a href="thali.html"><img src="images/northindianThali.jpeg" alt="NI Thali"></a>
+            <span><b>NothIndian Thali</b></span>
+        </div>
+        <div class="grid_item">
+            <a href="thali.html"><img src="images/southindianTheli.jpg" alt="SI Thali"></a>
+            <span><b>SouthIndian Thali</b></span>
+        </div>
+        <div class="grid_item">
+            <a href="#kaju"><img src="images/kaju.gif" alt="Kaju Katli"></a>
+            <span><b>Kaju Katli</b></span>
+        </div>
+        <div class="grid_item">
+            <a href="#pab"><img src="images/pizza4.jpeg" alt="Pizza"></a>
+            <span><b>Pizza</b></span>
+        </div>
+        <div class="grid_item">
+            <a href="#burger"><img src="images/burger1.jpeg" alt="Burger"></a>
+            <span><b>Spl Burger</b></span>
+        </div>
+        <div class="grid_item">
+            <a href="#bbb"><img src="images/Bisi-bele-bath.jpg" alt="BB-Bath"></a>
+            <span><b>Bisi Bele Bath</b></span>
+        </div>
+        <br>
+    </div>
+    </div>
+    <br>
+    <div style="display: flex; gap: 5px;">
+        <!-- Left Side - Menu -->
+        <div class="menu" style="width: 18.5%; min-width: 200px;">
+            <p style="color: white; font-family: 'Cuprum'; font-size: larger"><b><u>Food Menu</u></b></p>
+            <nav>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <p style="font-size: 25px; font-family: Verdana, Geneva, Tahoma, sans-serif; margin-bottom: 12px;">
+                        <img src="lunch/menu.jpeg" alt="list" style="height: 35px; width: 35px;">
+                    </p>
+                </div>
+                <div class="sidebar" id="sidebar">
+                    <p class="menulist"><ul><b style="font-size: 20px;"><a href="#brkfst"> BreakFast</a></b></ul></p>
+                    <p class="menulist"><ul><b style="font-size: 20px;"><a href="#lunch"> Main Course</a></b></ul></p>
+                    <p class="menulist"><ul><b style="font-size: 20px;"><a href="#main">Bread</a></b></ul></p>
+                    <p class="menulist"><ul><b style="font-size: 20px;"><a href="#rice"> Rice Items</a></b></ul></p>
+                    <p class="menulist"><ul><b style="font-size: 20px;"><a href="#snacks">Snacks</a></b></ul></p>
+                    <p class="menulist"><ul><b style="font-size: 20px;"><a href="#sweets">Sweets</a></b></ul></p>
+                    <p class="menulist"><ul><b style="font-size: 20px;"><a href="#pab"> Pizza & Burger</a></b></ul></p>
+                </div>
+            </nav>
+        </div>
+    
+        <!-- Right Side - Text Content -->
+        <div style="flex-grow: 1; padding: 20px;border-radius: 5px; background-image: url('https://img.freepik.com/premium-photo/thali-background_1278460-11353.jpg'); background-size: 99% 100%">
+            <p style="font-family:iceberg; font-size: 45px; color: white; padding-left: 40px; padding-top: 150px; justify-content: center; font-variant: small-caps; font-language-override: normal; font-kerning;font-synthesis-weight: 10px;">
+                Where Every Meal Feels Like a Celebration         <br>
+            </p>
+            <span style="font-size: 18px;font-family:lobster, serif; font-size: 38px; color: white; padding-left: 250px; justify-content: space-around; padding-top: 60px; font-variant: small-caps; font-variant: small-caps; font-language-override: normal; font-kerning;font-synthesis-weight: 10px;">
+                Pick, Click & Enjoy!
+            </span>
+            
+        </div>
+    </div>
+    
+    </div><br>
+
+
+    
+
+
+    <div class="brkfst" id="brkfst" >
+    <p style="font-size: 30px; font-family:'Times New Roman', Times, serif; margin-bottom: 12px;font-size: 24px; margin-top: 20px; margin-left: 15px;"><b>Break Fast Section</b></p>
+    <div class="breakfast" id="resto">
+        <div class="break_item">
+            <img src="images/idli.jpg" alt="Idli" onclick="addToCart('Idli', 45)" style="margin-left: 27px;" id="idli">
+            <span><b>Idli</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:200px; font-size: 22px;">4.4⭐</span>
+            <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 185px; font-size: medium;">₹45 For one </span>
+        </div>
+        <div class="break_item">
+            <img src="breakfast/d.jpg" alt="Dosa" onclick="addToCart('Dosa', 55)" style="margin-left: 30px;" id="dosa">
+            <span><b>Dosa</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:200px; font-size: 22px">4.3⭐</span>
+            <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 195px; font-size: medium;">₹55 For one </span>
+        </div>
+        <div class="break_item">
+            <img src="breakfast/wada.jpeg" alt="Wada" onclick="addToCart('Medu Wada', 60)" style="margin-left: 30px;" id="resto">
+            <span><b>Medu Wada</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:130px; font-size: 22px;">4.4⭐</span>
+            <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 195px; font-size: medium;">₹60 For one </span>
+        </div>
+        <div class="break_item">
+            <img src="breakfast/poori.jpg" alt="Poori Bhaji" onclick="addToCart('Poori Bhaji', 55)" style="margin-left: 27px;" id="resto">
+            <span><b>Poori Bhaji</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:130px; font-size: 22px;">4.2⭐</span>
+            <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 190px; font-size: medium;">₹55 For one </span>
+        </div>
+        <div class="break_item">
+            <img src="breakfast/Upma.jpg" alt="Upma" onclick="addToCart('Upma', 40)" style="margin-left: 23px;" id="resto">
+            <span><b>Upma</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:180px; font-size: 22px;">4.0⭐</span>
+            <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 190px; font-size: medium;">₹40 For one </span>
+        </div>
+        <div class="break_item">
+            <img src="breakfast/sheera.jpeg" alt="sheera" onclick="addToCart('Sheera', 40)" style="margin-left: 30px;" id="resto">
+            <span><b>Sheera</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:180px; font-size: 22px;">4.2⭐</span>
+            <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 200px; font-size: medium;">₹40 For one </span>
+        </div>
+        <div class="break_item">
+            <img src="breakfast/uttapam.jpeg" alt="Uttappa" onclick="addToCart('Uttappam', 60)" style="margin-left: 35px" id="resto">
+            <span><b>Uttappa</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:165px; font-size: 22px;">4.3⭐</span>
+            <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 195px; font-size: medium;">₹60 For one </span>
+        </div>
+        <div class="break_item">
+            <img src="breakfast/paneerDosa.jpeg" alt="Paneer Dosa" onclick="addToCart('Paneer Dosa', 70)" style="margin-left: 27px" id="resto">
+            <span><b>Paneer Dosa</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:120px; font-size: 22px;">4.5⭐</span>
+            <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹70 For one </span>
+        </div>
+        <div class="break_item">
+            <img src="breakfast/idli-wada.jpeg" alt="Idli-Wada" onclick="addToCart('Idli-Wada', 60)" style="margin-left: 27px" id="resto">
+            <span><b>Idli-Wada</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:140px; font-size: 22px;">4.4⭐</span>
+            <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹60 For one </span>
+        </div>
+        <div class="break_item">
+            <img src="breakfast/pooha.jpg" alt="Pooha" onclick="addToCart('Pooha', 45)" style="margin-left: 27px" id="resto">
+            <span><b>Pooha</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:185px; font-size: 22px;">4.4⭐</span>
+            <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 185px; font-size: medium;">₹45 For one </span>
+        </div>
+        <div class="break_item">
+            <img src="breakfast/c.jpg" alt="Chole" onclick="addToCart('Chole-Bhature', 70)" style="margin-left: 35px" id="resto">
+            <span><b>Chole-Bhature</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:110px; font-size: 22px;">4.3⭐</span>
+            <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 190px; font-size: medium;">₹70 For one </span>
+        </div>
+        <div class="break_item">
+            <img src="breakfast/susla.jpg" alt="Susla" onclick="addToCart('Susla', 45)" style="margin-left: 27px" id="resto">
+            <span><b>Susla</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:190px; font-size: 22px;">4.3⭐</span>
+            <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹45 For one </span>
+        </div>
+    </div>    
+    </div>
+    <br><br>
+    <div class="lunch" id="lunch">
+        <p style="font-size: 30px; font-family:'Times New Roman', Times, serif; margin-bottom: 12px;font-size: 24px; margin-top: 20px; margin-left: 15px;"><b>Main Course</b></p>
+        <div class="lunch_food" id="resto1">
+            <div class="lunch_item">
+                <img src="lunch/kadai-paneer.jpeg" alt="Kadai-Paneer" onclick="addToCart('Kadai Paneer', 150)"  style="margin-left: 27px;" id="resto">
+                <span><b>Kadai Paneer</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:110px; font-size: 22px;">4.6⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 182px; font-size: medium;">₹150 For one </span>
+            </div>
+            <div class="lunch_item">
+                <img src="lunch/matar-paneer.jpg" alt="Manar-Paneer" onclick="addToCart('Matar Paneer', 145)" style="margin-left: 30px;" id="resto">
+                <span><b>Mutter Paneer</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:100px; font-size: 22px">4.5⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹145 For one </span>
+            </div>
+            <div class="lunch_item">
+                <img src="lunch/shahi-pnr.avif" alt="Shahi-Paneer" onclick="addToCart('Shahi Paneer', 140)"  style="margin-left: 30px;" id="paneer">
+                <span><b>Shahi Paneer</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:120px; font-size: 22px;">4.3⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 185px; font-size: medium;">₹140 For one </span>
+            </div>
+            <div class="lunch_item">
+                <img src="lunch/paneer-btr.jpeg" alt="Paneer-Butter" onclick="addToCart('Paneer butter Masala', 160)"  style="margin-left: 30px;" id="resto">
+                <span><b>Paneer butter Masala</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:40px; font-size: 22px;">4.6⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 185px; font-size: medium;">₹160 For one </span>
+            </div>
+            <div class="lunch_item">
+                <img src="lunch/palak-pnr.jpg" alt="Palak-Paneer" onclick="addToCart('Palak Paneer', 135)" style="margin-left: 30px;" id="resto">
+                <span><b>Palak Paneer</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:115px; font-size: 22px;">4.3⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 190px; font-size: medium;">₹135 For one </span>
+            </div>
+            <div class="lunch_item">
+                <img src="lunch/bendi.jpg" alt="Spl-Bendi" onclick="addToCart('Spl Bendi Fry', 135)"  style="margin-left: 30px;" id="resto">
+                <span><b>Spl Bendi Fry</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:110px; font-size: 22px;">4.3⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 185px; font-size: medium;">₹135 For one </span>
+            </div>
+            <div class="lunch_item">
+                <img src="lunch/shev.jpg" alt="Spl-Shev" onclick="addToCart('Spl Shev', 100)"  style="margin-left: 35px" id="resto">
+                <span><b>Spl Shev</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:165px; font-size: 22px;">4.5⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 195px; font-size: medium;">₹100 For one </span>
+            </div>
+            <div class="lunch_item">
+                <img src="lunch/stuffed capsicum.avif" alt="Stuffed capsicum" onclick="addToCart('Stuffed Capsicum', 70)" style="margin-left: 30px" id="resto">
+                <span><b>Stuffed Capsicum</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:70px; font-size: 22px;">4.4⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹70 For one </span>
+            </div>
+            <div class="lunch_item">
+                <img src="lunch/kajuKurma.avif" alt="Kaju Kurma"  onclick="addToCart('Kaju Kurma', 160)" style="margin-left: 30px" id="resto">
+                <span><b>Kaju Kurma</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:120px; font-size: 22px;">4.6⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹160 For one </span>
+            </div>
+            <div class="lunch_item">
+                <img src="lunch/malai-kofta.jpg" alt="Malai Kofta" onclick="addToCart('Malai Kofta', 145)"  style="margin-left: 30px" id="resto">
+                <span><b>Malai Kofta</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:125px; font-size: 22px;">4.5⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹145 For one </span>
+            </div>
+            <div class="lunch_item">
+                <img src="lunch/shahi kofta.jpeg" alt="Shahi Kofta" onclick="addToCart('Shahi Kofta', 170)"  style="margin-left: 35px" id="resto">
+                <span><b>Shahi Kofta</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:130px; font-size: 22px;">4.3⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹170 For one </span>
+            </div>
+            <div class="lunch_item">
+                <img src="lunch/soyabeen-kofta.jpg" alt="soyabeen-kofta"  onclick="addToCart('Soyabeen Kofta', 145)" style="margin-left: 27px" id="resto">
+                <span><b>Soyabeen Kofta</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:90px; font-size: 22px;">4.3⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹145 For one </span>
+            </div>
+            <div class="lunch_item">
+                <img src="lunch/spl soyabeen.jpg" alt="spl soyabeen"  onclick="addToCart('Spl Soyabean', 145)" style="margin-left: 27px" id="resto">
+                <span><b>Spl Soyabean</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:115px; font-size: 22px;">4.5⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹145 For one </span>
+            </div>
+            <div class="lunch_item">
+                <img src="lunch/dalfry.webp" alt="spl dal fry" onclick="addToCart('Spl Dal Fry', 135)"  style="margin-left: 27px" id="resto">
+                <span><b>Spl Dal Fry</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:130px; font-size: 22px;">4.3⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹135 For one </span>
+            </div>
+            <div class="lunch_item">
+                <img src="lunch/dalmakhni.jpeg" alt="Spl Dal Makhni" onclick="addToCart('Spl Dal Makhni', 135)"  style="margin-left: 27px" id="resto">
+                <span><b>Spl Dal Makhni</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:90px; font-size: 22px;">4.3⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹135 For one </span>
+            </div>
+            <div class="lunch_item">
+                <img src="lunch/daltadka.webp" alt="Dal Tadka" onclick="addToCart('Spl Dal Tadka', 140)"  style="margin-left: 27px" id="resto">
+                <span><b>Spl Dal Tadka</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:110px; font-size: 22px;">4.5⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹140 For one </span>
+            </div>
+            <div class="lunch_item">
+                <img src="lunch/dal methi.jpeg" alt="Dal methi" onclick="addToCart('Spl Dal Methi', 140)"   style="margin-left: 27px" id="resto">
+                <span><b>Spl Dal Methi</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:110px; font-size: 22px;">4.4⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹140 For one </span>
+            </div>
+            <div class="lunch_item">
+                <img src="lunch/dal kop.jpeg" alt="sSpl Dal KOP" onclick="addToCart('Spl Dal Kolhapuri', 145)"  style="margin-left: 27px" id="resto">
+                <span><b>Spl Dal Kolhapuri</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:70px; font-size: 22px;">4.6⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹145 For one </span>
+            </div>
+            <div class="lunch_item">
+                <img src="lunch/spl tomoto chuttney.jpg" alt="Tomato Chuttney" onclick="addToCart('Spl Tomato Chuttney', 130)"  style="margin-left: 30px" id="resto">
+                <span><b>Spl Tomato Chuttney</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:40px; font-size: 22px;">4.3⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹130 For one </span>
+            </div>
+            <div class="lunch_item">
+                <img src="lunch/dum alu.jpg" alt="SPl Dum Alu" onclick="addToCart('Spl-Dam Alu', 145)"  style="margin-left: 27px" id="resto">
+                <span><b>Spl Dum Alu</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:120px; font-size: 22px;">4.3⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹145 For one </span>
+            </div>
+        </div>    
+        </div><br><br>
+
+        <div class="main" id="main">
+            <p style="font-size: 30px; font-family:'Times New Roman', Times, serif; margin-bottom: 12px;font-size: 24px; margin-top: 20px; margin-left: 15px;"><b>Tandoori Roti & Naan Kulcha</b></p>
+            <div class="rooti" id="resto2">
+                <div class="rooti_item" >
+                    <img src="lunch/naan.jpg" alt="Naan" onclick="addToCart('Naan', 26)" style="margin-left: 27px;" id="resto">
+                    <span><b>Naan</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:185px; font-size: 22px;">4.5⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 185px; font-size: medium;">₹26 For one </span>
+                </div>
+                <div class="rooti_item">
+                    <img src="lunch/but_naan.jpg" alt="Butter_naan" onclick="addToCart('Butter Naan', 30)" style="margin-left: 30px;" id="resto">
+                    <span><b>Butter Naan</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:120px; font-size: 22px">4.4⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 195px; font-size: medium;">₹30 For one </span>
+                </div>
+                <div class="rooti_item">
+                    <img src="lunch/garlic naan.jpeg" alt="Garlic Naan" onclick="addToCart('Spl Garlic Naan', 45)" style="margin-left: 23px;" id="resto">
+                    <span><b>Spl Garlic Naan</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:85px; font-size: 22px;">4.2⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 190px; font-size: medium;">₹45 For one </span>
+                </div>
+                <div class="rooti_item">
+                    <img src="lunch/Tandoori-Keema-Kulcha.jpg" alt="Tandoori-Keema-Kulcha" onclick="addToCart('Spl Tandoori Kuncha', 32)" style="margin-left: 30px;" id="resto">
+                    <span><b>Spl Tandoori Kuncha</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:40px; font-size: 22px;">4.7⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 195px; font-size: medium;">₹32 For one </span>
+                </div>
+                <div class="rooti_item">
+                    <img src="lunch/Butter-Kulcha.jpeg" alt="Butter-Kulcha" onclick="addToCart('Spl Butter Kulcha', 55)" style="margin-left: 27px;" id="resto">
+                    <span><b>Spl Butter Kulcha</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:70px; font-size: 22px;">4.2⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 190px; font-size: medium;">₹55 For one </span>
+                </div>
+                <div class="rooti_item">
+                    <img src="lunch/rumali.webp" alt="Rumali Rooti" onclick="addToCart('Rumali Rooti', 55)" style="margin-left: 30px;" id="resto">
+                    <span><b>Rumali Rooti</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:115px; font-size: 22px;">4.4⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 200px; font-size: medium;">₹55 For one </span>
+                </div>
+                <div class="rooti_item">
+                    <img src="lunch/chapati.jpeg" alt="chapati" onclick="addToCart('Chapati', 20)" style="margin-left: 35px" id="resto">
+                    <span><b>Chapati</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:165px; font-size: 22px;">4.4⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 195px; font-size: medium;">₹20 For one </span>
+                </div>
+                <div class="rooti_item">
+                    <img src="lunch/tandoori-r.jpeg" alt="Tandoori Rooti" onclick="addToCart('Tandoori Rooti', 28)" style="margin-left: 27px" id="resto">
+                    <span><b>Tandoori Rooti</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:90px; font-size: 22px;">4.5⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹28 For one </span>
+                </div>
+            </div>
+        </div><br><br>
+
+        <div class="rice" id="rice">
+            <p style="font-size: 30px; font-family:'Times New Roman', Times, serif; margin-bottom: 12px;font-size: 24px; margin-top: 20px; margin-left: 15px;"><b>Rice Items</b></p>
+            <div class="rice_food" id="resto3">
+                <div class="rice_item">
+                    <img src="lunch/Veg palao.jpg" alt="Veg Palao" onclick="addToCart('Veg Palao', 140)" style="margin-left: 27px;" id="resto">
+                    <span><b>Veg Palao</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:150px; font-size: 22px;">4.6⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 182px; font-size: medium;">₹140 For one </span>
+                </div>
+                <div class="rice_item">
+                    <img src="lunch/jeera rice.jpg" alt="Jeera Rice" onclick="addToCart('Jeera Rice', 125)" style="margin-left: 30px;" id="resto">
+                    <span><b>Jeera Rice</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:140px; font-size: 22px">4.5⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹125 For one </span>
+                </div>
+                <div class="rice_item">
+                    <img src="lunch/curd rice.JPG" alt="Curd Rice" onclick="addToCart('Curd Rice', 120)" style="margin-left: 30px;" id="resto">
+                    <span><b>Curd Rice</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:150px; font-size: 22px;">4.6⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 185px; font-size: medium;">₹120 For one </span>
+                </div>
+                <div class="rice_item">
+                    <img src="lunch/masala rice.jpeg" alt="PMasala Rice" onclick="addToCart('Masala Rice', 125)" style="margin-left: 30px;" id="resto">
+                    <span><b>Masala Rice</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:130px; font-size: 22px;">4.4⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 185px; font-size: medium;">₹125 For one </span>
+                </div>
+                <div class="rice_item">
+                    <img src="lunch/dal kichdi.jpeg" alt="Dal Kichdi" onclick="addToCart('Dal Kichdi', 140)" style="margin-left: 30px;" id="resto">
+                    <span><b>Dal Kichdi</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:145px; font-size: 22px;">4.4⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 190px; font-size: medium;">₹140 For one </span>
+                </div>
+                <div class="rice_item">
+                    <img src="lunch/White rice.jpg" alt="White rice" onclick="addToCart('Plane White Rice', 85)" style="margin-left: 30px;" id="resto">
+                    <span><b>Plane White Rice</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:75px; font-size: 22px;">4.2⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 185px; font-size: medium;">₹85 For one </span>
+                </div>
+                <div class="rice_item">
+                    <img src="lunch/ghee rice.jpeg" alt="Ghee rice" onclick="addToCart('Spl Ghee Rice', 155)" style="margin-left: 35px" id="resto">
+                    <span><b>Spl Ghee Rice</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:120px; font-size: 22px;">4.5⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 195px; font-size: medium;">₹155 For one </span>
+                </div>
+                <div class="rice_item">
+                    <img src="lunch/veg hyd biryani.webp" alt="Hyd Biryani" onclick="addToCart('Hydrabadi Veg Biryani', 175)" style="margin-left: 30px" id="resto">
+                    <span><b>Hydrabadi Veg Biryani</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:30px; font-size: 22px;">4.6⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹175 For one </span>
+                </div>
+                <div class="rice_item">
+                    <img src="lunch/soyapulao.jpg" alt="Soya Pulao" onclick="addToCart('Soyabean Pulao', 145)" style="margin-left: 30px" id="resto">
+                    <span><b>Soyabean Pulao</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:95px; font-size: 22px;">4.6⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹145 For one </span>
+                </div>
+                <div class="rice_item">
+                    <img src="lunch/soya biryani.jpeg" alt="Soya Biryani" onclick="addToCart('Soyabean Biryani', 165)" style="margin-left: 30px" id="resto">
+                    <span><b>Soyabean Biryani</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:75px; font-size: 22px;">4.7⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹165 For one </span>
+                </div>
+                <div class="rice_item">
+                    <img src="lunch/tomato rice.jpg" alt="Tomato Rice" onclick="addToCart('Spl Tomato Rice', 140)" style="margin-left: 35px" id="resto">
+                    <span><b>Spl Tomato Rice</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:90px; font-size: 22px;">4.4⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹140 For one </span>
+                </div>
+                <div class="rice_item">
+                    <img src="lunch/lemon rice.jpg" alt="Lemon rice" onclick="addToCart('Lemon Rice', 135)" style="margin-left: 27px" id="resto">
+                    <span><b>Lemon Rice</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:130px; font-size: 22px;">4.2⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹135 For one </span>
+                </div>
+                <div class="rice_item">
+                    <img src="lunch/puliyogare rice.jpeg" alt="Puliyogare" onclick="addToCart('Puliyogare Rice', 155)" style="margin-left: 27px" id="resto">
+                    <span><b>Puliyogare Rice</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:95px; font-size: 22px;">4.4⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 175px; font-size: medium;">₹155 For one </span>
+                </div>
+                <div class="rice_item">
+                    <img src="lunch/bisi bele bath.webp" alt="Bisi Bele bath" onclick="addToCart('Bisi Bele bath', 165)" style="margin-left: 27px" id="bbb">
+                    <span><b>Bisi Bele bath</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:110px; font-size: 22px;">4.7⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹165 For one </span>
+                </div>
+                <div class="rice_item">
+                    <img src="lunch/spl rajma rice.jpeg" alt="Spl rajma " onclick="addToCart('Rajma Rice', 165)" style="margin-left: 27px" id="resto">
+                    <span><b>Rajma Rice</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:130px; font-size: 22px;">4.5⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹165 For one </span>
+                </div>
+                <div class="rice_item">
+                    <img src="lunch/spl punjabi kadi pakoda.jpeg" alt="Spl Punjabi kadi" onclick="addToCart('Punjabi Kadi Rice', 145)" style="margin-left: 27px" id="resto">
+                    <span><b>Punjabi Kadi Rice</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:70px; font-size: 22px;">4.5⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹145 For one </span>
+                </div>
+                <div class="rice_item">
+                    <img src="lunch/kaju rice.jpg" alt="kaju RIce" onclick="addToCart('Kaju Rice', 165)" style="margin-left: 27px" id="resto">
+                    <span><b>Kaju Rice</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:150px; font-size: 22px;">4.6⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹165 For one </span>
+                </div>
+                <div class="rice_item">
+                    <img src="lunch/kashmari pulao.jpeg" alt="kashmari Pualo" onclick="addToCart('Kashmari Pulao', 165)" style="margin-left: 27px" id="resto">
+                    <span><b>Kashmari Pulao</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:90px; font-size: 22px;">4.4⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹165 For one </span>
+                </div>
+                <div class="rice_item">
+                    <img src="lunch/paneer tikka palao.jpeg" alt="Paneer Tikka Palao" onclick="addToCart('Paneer Tikka Palao', 130)" style="margin-left: 30px" id="resto">
+                    <span><b>Paneer Tikka Palao</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:60px; font-size: 22px;">4.4⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹130 For one </span>
+                </div>
+                <div class="rice_item">
+                    <img src="lunch/khichidi.jpg" alt="SPl khichidi" onclick="addToCart('Khichidi', 145)" style="margin-left: 27px" id="resto">
+                    <span><b>Khichidi</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:160px; font-size: 22px;">4.4⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹145 For one </span>
+                </div>
+            </div>    
+            </div><br><br>
+
+            <div class="snacks" id="snacks">
+                <p style="font-size: 30px; font-family:'Times New Roman', Times, serif; margin-bottom: 12px;font-size: 24px; margin-top: 20px; margin-left: 15px;"><b>Snacks</b></p>
+                <div class="snacks_food" id="resto4">
+                    <div class="snacks_item">
+                        <img src="lunch/Samosas.webp" alt="Samosa" onclick="addToCart('Samosa', 20)" style="margin-left: 27px;" id="resto">
+                        <span><b>Samosa</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:160px; font-size: 22px;">4.6⭐</span>
+                        <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 182px; font-size: medium;">₹20 For one </span>
+                    </div>
+                    <div class="snacks_item">
+                        <img src="lunch/pani puri.jpeg" alt="Pani Puri" onclick="addToCart('Paani Puri', 25)" style="margin-left: 30px;" id="resto">
+                        <span><b>Paani Puri</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:140px; font-size: 22px">4.8⭐</span>
+                        <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹25 Per Plate </span>
+                    </div>
+                    <div class="snacks_item">
+                        <img src="lunch/finger chips.jpg" alt="Finger Chips" onclick="addToCart('Finger Chips', 135)" style="margin-left: 30px;" id="resto">
+                        <span><b>Finger Chips</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:120px; font-size: 22px;">4.6⭐</span>
+                        <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 185px; font-size: medium;">₹135 For one </span>
+                    </div>
+                    <div class="snacks_item">
+                        <img src="lunch/spring rolls.jpeg" alt="Spring Rolls" onclick="addToCart('Spring Rolls', 150)" style="margin-left: 30px;" id="resto">
+                        <span><b>Spring Rolls</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:130px; font-size: 22px;">4.4⭐</span>
+                        <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 185px; font-size: medium;">₹150 For one </span>
+                    </div>
+                    <div class="snacks_item">
+                        <img src="lunch/Aloo-65.jpg" alt="Alu 65" onclick="addToCart('Alu-65', 145)" style="margin-left: 30px;" id="resto">
+                        <span><b>Alu-65</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:180px; font-size: 22px;">4.4⭐</span>
+                        <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 190px; font-size: medium;">₹145 For one </span>
+                    </div>
+                    <div class="snacks_item">
+                        <img src="lunch/paneer65.jpeg" alt="Paneer 65" onclick="addToCart('Paneer-65', 195)" style="margin-left: 30px;" id="resto">
+                        <span><b>Paneer-65</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:145px; font-size: 22px;">4.4⭐</span>
+                        <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 185px; font-size: medium;">₹195 For one </span>
+                    </div>
+                    <div class="snacks_item">
+                        <img src="lunch/gobi65.jpeg" alt="Gobi 65" onclick="addToCart('Gobi-65', 90)" style="margin-left: 35px" id="resto">
+                        <span><b>Gobi-65</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:170px; font-size: 22px;">4.5⭐</span>
+                        <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 195px; font-size: medium;">₹90 For one </span>
+                    </div>
+                    <div class="snacks_item">
+                        <img src="lunch/gobi manchuriam.jpeg" alt="Gobi manchurian" onclick="addToCart('Gobi Manchurian', 100)" style="margin-left: 30px" id="resto">
+                        <span><b>Gobi Manchurian</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:75px; font-size: 22px;">4.4⭐</span>
+                        <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹100 For one </span>
+                    </div>
+                    <div class="snacks_item">
+                        <img src="lunch/babycorn65.jpeg" alt="Baby corn 65" onclick="addToCart('Baby Corn-65', 190)" style="margin-left: 30px" id="resto">
+                        <span><b>Baby Corn-65</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:115px; font-size: 22px;">4.6⭐</span>
+                        <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹190 For one </span>
+                    </div>
+                    <div class="snacks_item">
+                        <img src="lunch/soya 655.jpeg" alt="Soya-65" onclick="addToCart('Soya-65', 145)" style="margin-left: 30px" id="resto">
+                        <span><b>Soya-65</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:170px; font-size: 22px;">4.4⭐</span>
+                        <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹145 For one </span>
+                    </div>
+                    <div class="snacks_item">
+                        <img src="lunch/Paneer-Tikka-dry.jpg" alt="paneer tikka" onclick="addToCart('Paneer Tikka Dry', 190)" style="margin-left: 35px" id="resto">
+                        <span><b>Paneer Tikka Dry</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:80px; font-size: 22px;">4.4⭐</span>
+                        <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹190 For one </span>
+                    </div>
+                    <div class="snacks_item">
+                        <img src="lunch/GOBI-CHILLY-Dry.jpg" alt="Gobi chilly Dry" onclick="addToCart('Gobi Chilly Dry', 145)" style="margin-left: 27px"id="resto">
+                        <span><b>Gobi Chilly Dry</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:90px; font-size: 22px;">4.2⭐</span>
+                        <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹145 For one </span>
+                    </div>
+                    <div class="snacks_item">
+                        <img src="lunch/chilly paneer dry.jpeg" alt="chilly paneer dry" onclick="addToCart('Chilly Paneer Dry', 195)" style="margin-left: 27px" id="resto">
+                        <span><b>Chilly Paneer Dry</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:70px; font-size: 22px;">4.4⭐</span>
+                        <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 175px; font-size: medium;">₹195 For one </span>
+                    </div>
+                    <div class="snacks_item">
+                        <img src="lunch/kachori.jpeg" alt="Kachori" onclick="addToCart('Kachori', 30)" style="margin-left: 27px" id="resto" >
+                        <span><b>Kachori</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:160px; font-size: 22px;">4.7⭐</span>
+                        <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹30 For one </span>
+                    </div>
+                    <div class="snacks_item">
+                        <img src="lunch/vada pav.jpeg" alt="vada Pao" onclick="addToCart('Vada Pav', 30)" style="margin-left: 27px" id="resto">
+                        <span><b>Vada Pav</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:150px; font-size: 22px;">4.7⭐</span>
+                        <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹30 For one </span>
+                    </div>
+                    <div class="snacks_item">
+                        <img src="lunch/pav bhaji.jpg" alt="Pav Bhaji" onclick="addToCart('Pav Bhaji', 80)" style="margin-left: 27px" id="resto">
+                        <span><b>Pav Bhaji</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:140px; font-size: 22px;">4.5⭐</span>
+                        <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹80 For one </span>
+                    </div>
+                    <div class="snacks_item">
+                        <img src="lunch/masala papd.jpeg" alt="Masala Papad" onclick="addToCart('Masala Papad', 35)" style="margin-left: 27px" id="resto">
+                        <span><b>Masala Papad</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:110px; font-size: 22px;">4.6⭐</span>
+                        <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹30 For one </span>
+                    </div>
+                    <div class="snacks_item">
+                        <img src="lunch/cut-mirchi-bajji.jpg" alt="mirchi Bhajji" onclick="addToCart('Cut Mirchi Bhajji', 50)" style="margin-left: 27px" id="resto">
+                        <span><b>Cut Mirchi Bhajji</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:65px; font-size: 22px;">4.4⭐</span>
+                        <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹50 For one </span>
+                    </div>
+                    <div class="snacks_item">
+                        <img src="lunch/break pakoda.JPG" alt="Bread pakoda" onclick="addToCart('Bread Pakoda', 50)" style="margin-left: 30px" id="resto">
+                        <span><b>Bread Pakoda</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:110px; font-size: 22px;">4.4⭐</span>
+                        <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹50 For one </span>
+                    </div>
+                    <div class="snacks_item">
+                        <img src="lunch/maggi.jpg" alt="Maggi" onclick="addToCart('Maggi', 50)" style="margin-left: 27px" id="resto">
+                        <span><b>Maggi</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:180px; font-size: 22px;">4.4⭐</span>
+                        <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹50 For one </span>
+                    </div>
+                </div>    
+            </div>
+        <br><br>
+
+        <div class="sweet" id="sweets"> 
+            <p style="font-size: 30px; font-family:'Times New Roman', Times, serif; margin-bottom: 12px;font-size: 24px; margin-top: 20px; margin-left: 15px;"><b>Sweets</b></p>
+            <div class="sweet_food" id="resto5">
+                <div class="sweet_item">
+                    <img src="sweets/spl kandi peda.avif" alt="Kandi Pedha" onclick="addToCart('Kandi Peda', 360)" style="margin-left: 27px;"id="resto">
+                    <span><b>Kandi Peda</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:130px; font-size: 22px;">4.6⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 175px; font-size: medium;">₹360 For 1 kg</span>
+                </div>
+                <div class="sweet_item">
+                    <img src="sweets/milk peda.jpeg" alt="Milk Peda" onclick="addToCart('Milk Peda', 400)" style="margin-left: 30px;" id="resto">
+                    <span><b>Milk Peda</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:130px; font-size: 22px">4.8⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹400 For 1 kg</span>
+                </div>
+                <div class="sweet_item">
+                    <img src="sweets/dharwad peda.jpeg" alt="Dharwad Peda" onclick="addToCart('Dharwad Peda', 460)" style="margin-left: 30px;" id="resto" >
+                    <span><b>Dharwad Peda</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:110px; font-size: 22px;">4.6⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 185px; font-size: medium;">₹460 For 1 kg</span>
+                </div>
+                <div class="sweet_item">
+                    <img src="sweets/motichoor-laddu.avif" alt="motichoor-laddu" onclick="addToCart('Motichoor Laddu', 380)" style="margin-left: 30px;" id="resto">
+                    <span><b>Motichoor Laddu</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:80px; font-size: 22px;">4.4⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 185px; font-size: medium;">₹380 For 1 kg</span>
+                </div>
+                <div class="sweet_item">
+                    <img src="sweets/mysore pak.jpeg" alt="Mysore pak" onclick="addToCart('Mysore Pak', 300)" style="margin-left: 30px;" id="resto">
+                    <span><b>Mysore Pak</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:130px; font-size: 22px;">4.4⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹300 For 1 kg</span>
+                </div>
+                <div class="sweet_item">
+                    <img src="sweets/coconut barfi.jpeg" alt="Coconut barfi" onclick="addToCart('Coconut Barfi', 360)" style="margin-left: 30px;" id="resto">
+                    <span><b>Coconut Barfi</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:110px; font-size: 22px;">4.4⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 185px; font-size: medium;">₹360 For 1 kg</span>
+                </div>
+                <div class="sweet_item">
+                    <img src="sweets/pista barfi.jpg" alt="Pista barfi" onclick="addToCart('Pista Barfi', 400)" style="margin-left: 35px" id="resto">
+                    <span><b>Pista Barfi</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:150px; font-size: 22px;">4.5⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 195px; font-size: medium;">₹400 For 1 kg</span>
+                </div>
+                <div class="sweet_item">
+                    <img src="sweets/mawa malpuri.jpg" alt="mal puri" onclick="addToCart('Mawa Malpuri', 290)" style="margin-left: 30px" id="resto">
+                    <span><b>Mawa Malpuri</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:100px; font-size: 22px;">4.4⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 170px; font-size: medium;">₹290 For 1 kg</span>
+                </div>
+                <div class="sweet_item">
+                    <img src="sweets/gulab jamun.jpeg" alt="Gulab Jamun" onclick="addToCart('Gulab Jamun', 35)" style="margin-left: 30px" id="resto">
+                    <span><b>Gulab Jamun</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:110px; font-size: 22px;">4.7⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹35 For one</span>
+                </div>
+                <div class="sweet_item">
+                    <img src="images/kaju.gif" alt="kaju katli" onclick="addToCart('Kaju Katli', 600)" style="margin-left: 30px" id="kaju">
+                    <span><b>Kaju Katli</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:130px; font-size: 22px;">4.5⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 160px; font-size: medium;">₹600 For 1 kg</span>
+                </div>
+                <div class="sweet_item">
+                    <img src="sweets/bombay halwa.jpeg" alt="bombay halwa" onclick="addToCart('Bombay Halwa', 250)" style="margin-left: 35px" id="resto">
+                    <span><b>Bombay Halwa</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:100px; font-size: 22px;">4.4⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹250 For 1 kg</span>
+                </div>
+                <div class="sweet_item">
+                    <img src="sweets/basundi.jpeg" alt="Basundi" onclick="addToCart('Basundi', 120)" style="margin-left: 27px" id="resto">
+                    <span><b>Basundi</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:165px; font-size: 22px;">4.6⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹120 For one</span>
+                </div>
+                <div class="sweet_item">
+                    <img src="sweets/kalakand.jpg" alt="Kalakand" onclick="addToCart('Kalakand', 420)" style="margin-left: 27px" id="resto">
+                    <span><b>Kalakand</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:150px; font-size: 22px;">4.7⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 175px; font-size: medium;">₹420 For 1 kg</span>
+                </div>
+                <div class="sweet_item">
+                    <img src="sweets/jalebi.jpeg" alt="Jalebi" onclick="addToCart('Jalebi', 280)" style="margin-left: 27px" id="resto">
+                    <span><b>Jalebi</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:180px; font-size: 22px;">4.6⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹280 For 1 kg</span>
+                </div>
+                <div class="sweet_item">
+                    <img src="sweets/rabdi.jpg" alt="rabdi" onclick="addToCart('Rabdi', 420)" style="margin-left: 27px" id="resto">
+                    <span><b>Rabdi</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:185px; font-size: 22px;">4.7⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 170px; font-size: medium;">₹420 For 1 kg</span>
+                </div>
+                <div class="sweet_item">
+                    <img src="sweets/rasmalai.jpeg" alt="rasmalai" onclick="addToCart('Rasmalai', 400)" style="margin-left: 27px" id="resto">
+                    <span><b>Rasmalai</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:160px; font-size: 22px;">4.5⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 175px; font-size: medium;">₹400 For 1 kg</span>
+                </div>
+                <div class="sweet_item">
+                    <img src="sweets/rasgulla.jpg" alt="rasgulla" onclick="addToCart('Rasgulla', 400)" style="margin-left: 27px" id="resto">
+                    <span><b>Rasgulla</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:160px; font-size: 22px;">4.6⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹400 For 1 kg</span>
+                </div>
+                <div class="sweet_item">
+                    <img src="sweets/spl dink laddu.jpg" alt="spl dink laddu" onclick="addToCart('Spl Dink Laddu', 380)" style="margin-left: 27px" id="resto">
+                    <span><b>Spl Dink Laddu</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:95px; font-size: 22px;">4.4⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹380 For 1 kg</span>
+                </div>
+                <div class="sweet_item">
+                    <img src="sweets/Sweet-Balushahi.jpg" alt="Balu Shahi" onclick="addToCart('Balushahi', 280)" style="margin-left: 30px" id="resto">
+                    <span><b>Balushahi</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:150px; font-size: 22px;">4.4⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹280 For 1 kg</span>
+                </div>
+                <div class="sweet_item">
+                    <img src="sweets/mix.jpg" alt="Mix Peda" onclick="addToCart('Mix Peda', 390)" style="margin-left: 27px" id="resto" >
+                    <span><b>Mix Peda</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:155px; font-size: 22px;">4.4⭐</span>
+                    <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹390 For 1 kg</span>
+                </div>
+            </div>    
+        </div>
+    <br><br>
+
+    <div class="pizza" id="pab">
+        <p style="font-size: 30px; font-family:'Times New Roman', Times, serif; margin-bottom: 12px;font-size: 24px; margin-top: 20px; margin-left: 15px;"><b>Pizza & Burger</b></p>
+        <div class="pizza_food" id="resto6">
+            <div class="pizza_item">
+                <img src="lunch/veggiess pizza.jpg" alt="Veggies Pizza" onclick="addToCart('Vaggiess Pizza', 249)" style="margin-left: 27px;" id="resto">
+                <span><b>Vaggiess Pizza</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:100px; font-size: 22px;">4.5⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 175px; font-size: medium;">₹249 For one</span>
+            </div>
+            <div class="pizza_item">
+                <img src="lunch/corn pizza.avif" alt="Corn Pizza" onclick="addToCart('Corn Pizza', 199)" style="margin-left: 30px;" id="resto">
+                <span><b>Corn Pizza</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:135px; font-size: 22px">4.5⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹199 For one</span>
+            </div>
+            <div class="pizza_item">
+                <img src="lunch/margherita-pizza.jpg" alt="Margherita Pizza" onclick="addToCart('Margherita Pizza', 249)" style="margin-left: 30px;" id="resto">
+                <span><b>Margherita Pizza</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:80px; font-size: 22px;">4.5⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 185px; font-size: medium;">₹249 For one</span>
+            </div>
+            <div class="pizza_item">
+                <img src="lunch/peppy paneer pizza loaded.jpg" alt="Perry Paneer Pizza" onclick="addToCart('Peppy Paneer Pizza', 299)" style="margin-left: 30px;" id="resto">
+                <span><b>Peppy Paneer Pizza</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:60px; font-size: 22px;">4.4⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 185px; font-size: medium;">₹299 For one</span>
+            </div>
+            <div class="pizza_item">
+                <img src="lunch/cheese volcano pizza.avif" alt="Volcano Pizza" onclick="addToCart('Volcano Pizza', 299)" style="margin-left: 30px;" id="resto">
+                <span><b>Volcano Pizza</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:110px; font-size: 22px;">4.4⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹299 For one</span>
+            </div>
+            <div class="pizza_item">
+                <img src="sweets/veg combo.avif" alt="Veg Combo" onclick="addToCart('Classical Veg Combo', 249)" style="margin-left: 30px;" id="resto">
+                <span><b>Classical Veg Combo</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:50px; font-size: 22px;">4.4⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 185px; font-size: medium;">₹249 For one</span>
+            </div>
+            <div class="pizza_item">
+                <img src="sweets/maharaja combo.avif" alt="Maharaja Combo" onclick="addToCart('Spl Maharaja Combo', 400)" style="margin-left: 35px" id="resto">
+                <span><b>Spl Maharaja Combo</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:50px; font-size: 22px;">4.5⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique;">Price:</span> <span style="margin-left: 195px; font-size: medium;">₹400 For one</span>
+            </div>
+            <div class="pizza_item">
+                <img src="sweets/tandoori pizza.png" alt="Tandoori Pizza" onclick="addToCart('Tandoori Paneer Pizza', 249)" style="margin-left: 30px" id="resto">
+                <span><b>Tandoori Paneer Pizza</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:30px; font-size: 22px;">4.4⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 170px; font-size: medium;">₹249 For one</span>
+            </div>
+            <div class="pizza_item">
+                <img src="sweets/combo.avif" alt="Spl Combo" onclick="addToCart('Paneer & Double Cheese', 299)" style="margin-left: 30px" id="resto">
+                <span><b>Paneer & Double Cheese</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:15px; font-size: 22px;">4.7⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹299 For one</span>
+            </div>
+            <div class="pizza_item">
+                <img src="lunch/veg snacker burger 140.avif" alt="Veg snacker burger" onclick="addToCart('Veg Snacker Burger', 140)" style="margin-left: 30px" id="burger" >
+                <span><b>Veg Snacker Burger</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:50px; font-size: 22px;">4.5⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 160px; font-size: medium;">₹140 For 1one</span>
+            </div>
+            <div class="pizza_item">
+                <img src="lunch/mighty cheese burger 250.avif" alt="cheese burger" onclick="addToCart('Cheese Burger', 250)" style="margin-left: 35px" id="resto">
+                <span><b>Cheese Burger</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:110px; font-size: 22px;">4.4⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹250 For one</span>
+            </div>
+            <div class="pizza_item">
+                <img src="lunch/tandoori paneer burger rs 260.avif" alt="Tandori Burger" onclick="addToCart('Tandoori Paneer Burger', 260)" style="margin-left: 27px" id="resto">
+                <span><b>Tandoori Paneer Burger</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:20px; font-size: 22px;">4.6⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹260 For one</span>
+            </div>
+            <div class="pizza_item">
+                <img src="lunch/cheese chili lava burger 190.avif" alt="Cheese Chilly Burger" onclick="addToCart('Cheese Chilly Burger', 199)" style="margin-left: 27px" id="resto">
+                <span><b>Cheese Chilly Burger</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:40px; font-size: 22px;">4.7⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 175px; font-size: medium;">₹199 For one</span>
+            </div>
+            <div class="pizza_item">
+                <img src="lunch/alu tikki.jpeg" alt="Alut tikki burger" onclick="addToCart('Alu Tikki Burger', 159)" style="margin-left: 27px" id="resto">
+                <span><b>Alu Tikki Burger</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:80px; font-size: 22px;">4.6⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹159 For one</span>
+            </div>
+            <div class="pizza_item">
+                <img src="lunch/combo.jpg" alt="Cheese Combo" onclick="addToCart('Cheese Combo Burger', 259)" style="margin-left: 27px" id="resto">
+                <span><b>Cheese Combo Burger</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:30px; font-size: 22px;">4.7⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 170px; font-size: medium;">₹259 For one</span>
+            </div>
+            <div class="pizza_item">
+                <img src="lunch/bombay-grilled-sandwich.jpg" onclick="addToCart('Spl Bombay Sandwitch', 259)" alt="BOmbay Masala Sandwitch" style="margin-left: 27px" id="resto">
+                <span><b>Spl Bombay Sandwitch</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:30px; font-size: 22px;">4.5⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 175px; font-size: medium;">₹259 For one</span>
+            </div>
+            <div class="pizza_item">
+                <img src="lunch/vegi sand.jpeg" alt="rasgulla" onclick="addToCart('Vegitable Sandwitch', 99)" style="margin-left: 27px" id="resto">
+                <span><b>Vegitable Sandwitch</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:50px; font-size: 22px;">4.6⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹99 For one</span>
+            </div>
+            <div class="pizza_item">
+                <img src="lunch/paneer sand.jpeg" alt="paneer Sandwitch" onclick="addToCart('Paneer Sandwitch', 259)" style="margin-left: 27px" id="resto">
+                <span><b>Paneer Sandwitch</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:75px; font-size: 22px;">4.4⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹259 For one</span>
+            </div>
+            <div class="pizza_item">
+                <img src="lunch/spicy potato sand.jpg" alt="Alu Sandwitch" onclick="addToCart('Potato Sandwitch', 159)" style="margin-left: 30px" id="resto">
+                <span><b>Potato Sandwitch</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:80px; font-size: 22px;">4.4⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹159 For one</span>
+            </div>
+            <div class="pizza_item">
+                <img src="lunch/classic veg sand.webp" alt="class veg Sandwitch" onclick="addToCart('Classical Sandwitch', 159)" style="margin-left: 27px" id="resto">
+                <span><b>Classical Sandwitch</b></span> <span style="border: 1px white solid; background-color: rgb(39, 190, 39); border-radius: 5px; color: white; margin-left:60px; font-size: 22px;">4.4⭐</span>
+                <span style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium; font-style: oblique; margin-right: 10px;">Price:</span> <span style="margin-left: 180px; font-size: medium;">₹159 For one</span>
+            </div>
+        </div>    
+    </div>
+    <br><br>
+
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("sidebar").classList.toggle("active");
+        }
+
+        function flipCard(card) {
+            card.classList.toggle("flipped");
+        }
+
+        function updateQuantity(change, event) {
+            event.stopPropagation(); // Prevent flipping on button click
+            let quantityElem = event.target.parentElement.querySelector(".quantity-value");
+            let newQuantity = Math.max(1, parseInt(quantityElem.textContent) + change);
+            quantityElem.textContent = newQuantity;
+        }
+
+        function addToCart(event) {
+            event.stopPropagation(); // Prevent flipping on button click
+            let quantity = event.target.previousElementSibling.querySelector(".quantity-value").textContent;
+            let cart = document.getElementById("cart-items");
+            let newItem = document.createElement("li");
+            newItem.textContent = `Food Item - ${quantity} pcs`;
+            cart.appendChild(newItem);
+        }
+
+        
+    </script>
+    <script>
+  function addToCart(name, price) {
+    let cartItems = JSON.parse(localStorage.getItem("thaliItems")) || [];
+
+    const existing = cartItems.find(i => i.name === name);
+    if (existing) {
+      existing.qty += 1;
+      existing.totalPrice = existing.qty * existing.price;
+    } else {
+      cartItems.push({ name, price, qty: 1, totalPrice: price });
+    }
+
+    localStorage.setItem("thaliItems", JSON.stringify(cartItems));
+
+    // Optional: Navigate to the cart page
+    alert(`${name} added to your thali!`);
+    // Or directly go to cart
+    // window.location.href = "cart.html";
+  }
+</script>
+  <script>
+function toggleTheme() {
+      document.body.classList.toggle("dark-mode");
+    }
+    </script>
+    <footer class="gov-footer">
+  <div class="footer-top">
+    <a href="#">Copyright Policy</a> /
+    <a href="#">Privacy Policy</a> /
+    <a href="#">Hyperlink Policy</a> /
+    <a href="#">Terms and Conditions</a> /
+    <a href="#">Help</a>
+  </div>
+
+  <div class="footer-content">
+    <p>
+      Content Owned and Maintained by <strong>Swad Ghar Ka</strong><br>
+      Designed, Developed by <a href="#"><strong>Samarth</strong></a><br>
+      <span style="color: #ccc;">Inspired by</span> Modern Indian Hospitality & Cuisine Culture<br>
+      <strong>Last Updated:</strong> July 13, 2025
+    </p>
+
+    
+  </div>
+</footer>
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close-btn">&times;</span>
+    <h2>Welcome to Spice Delight! 🍛</h2>
+    <p>Click on the Thali to make a customizable Thali 🥗 & <br>Don't miss to click on the Rush Hours Great deals are waiting for you.🔥🎁<br>To select the item Click on the particular image</p>
+  </div>
+</div>
+
+<div id="popupp" class="popupp">
+  <div class="popupp-content">
+    <span class="close-butn">&times;</span>
+    <h2>Welcome to Spice Delight! 🍛</h2>
+<p><a href="mess.html">Click here for the students for the daily Food(Mess)</a></p>
+  </div>
+</div>
+
+<script>
+  window.onload = function () {
+    const popup = document.getElementById("popupp");
+    const closeBtn = document.querySelector(".close-butn");
+
+    // Check if popup was already shown
+    const hasVisited = sessionStorage.getItem("hasVisited");
+
+    if (!hasVisited) {
+      // Show the popup after 3 seconds
+      setTimeout(() => {
+        popup.style.display = "block";
+        sessionStorage.setItem("hasVisited", "true"); // Mark as shown
+      }, 10000);
+    }
+
+    // Close on clicking X
+    closeBtn.onclick = () => popup.style.display = "none";
+
+    // Close on clicking outside
+    window.onclick = function (event) {
+      if (event.target === popup) {
+        popup.style.display = "none";
+      }
+    };
+  };
+</script>
+
+
+<script>
+  window.onload = function () {
+    const popup = document.getElementById("popup");
+    const closeBtn = document.querySelector(".close-btn");
+
+    // Check if popup was already shown
+    const hasVisited = sessionStorage.getItem("hasVisited");
+
+    if (!hasVisited) {
+      // Show the popup after 3 seconds
+      setTimeout(() => {
+        popup.style.display = "block";
+        sessionStorage.setItem("hasVisited", "true"); // Mark as shown
+      }, 3000);
+    }
+
+    // Close on clicking X
+    closeBtn.onclick = () => popup.style.display = "none";
+
+    // Close on clicking outside
+    window.onclick = function (event) {
+      if (event.target === popup) {
+        popup.style.display = "none";
+      }
+    };
+  };
+</script>
+
+
+</body>
+</html>

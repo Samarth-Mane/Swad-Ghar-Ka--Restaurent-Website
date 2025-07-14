@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rush Hour Specials + Spin & Win</title>
+  <style>
+
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #f9fafb;
+      color: #1f2937;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #2563eb;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .countdown {
+      text-align: center;
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+
+    .offers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .offer-card {
+      background: #f3f4f6;
+      border-left: 6px solid #2563eb;
+      border-radius: 12px;
+      padding: 1.2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .offer-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .offer-time {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .offer-desc {
+      font-size: 1rem;
+    }
+
+    .lucky {
+      background: #e0f2fe;
+      border-left: 6px solid #0ea5e9;
+      padding: 1rem;
+      border-radius: 12px;
+      text-align: center;
+      font-weight: bold;
+      color: #0284c7;
+      margin-bottom: 2rem;
+    }
+
+    .wheel-section {
+      text-align: center;
+    }
+
+    .wheel {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 8px solid #2563eb;
+      margin: 1rem auto;
+      position: relative;
+      overflow: hidden;
+      background: conic-gradient(
+        #fde68a 0deg 90deg,
+        #fca5a5 90deg 180deg,
+        #a5f3fc 180deg 270deg,
+        #c4b5fd 270deg 360deg
+      );
+      transition: transform 1s ease-out;
+      
+    }
+
+    .wheel:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      z-index: 2;
+    }
+
+    .pointer {
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-bottom: 30px solid #ef4444;
+      margin: 0 auto;
+      transform: rotate(180deg);
+    }
+
+    #spinBtn {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.1s ease;
+    }
+
+    #spinBtn:hover {
+      background: #1d4ed8;
+    }
+
+    .prize {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #059669;
+    }
+
+    @media (max-width: 600px) {
+      .offer-card {
+        text-align: center;
+      }
+
+      .countdown {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🔥 Rush Hour Specials</h1>
+
+    <!-- Countdown -->
+    <div class="countdown" id="countdown">
+      Next Rush Hour Offer starts in: <span id="timer">--:--:--</span>
+    </div>
+
+    <!-- Offers -->
+    <div class="offers">
+      <div class="offer-card">
+        <div class="offer-time">1 PM – 2 PM</div>
+        <div class="offer-desc">🍛 10% off on all Thali orders</div>
+      </div>
+      <div class="offer-card">
+        <div class="offer-time">4 PM – 6 PM</div>
+        <div class="offer-desc">🍬 Free random snacks with every combo meal Spin and win</div>
+      </div>
+      <div class="offer-card">
+        <div class="offer-time">7 PM – 9 PM</div>
+        <div class="offer-desc">🍽️ Buy 3 Get 1 on Tandoori Naan</div>
+      </div>
+    </div>
+
+    <!-- Lucky Order Time -->
+    <div class="lucky" id="luckyTime">
+      🍀 Order between 8:30 – 8:31 PM and your meal could be FREE! Bee Ready With the Order!!
+    </div>
+
+    <!-- Spin & Win Section -->
+    <br><div class="wheel-section">
+      <div class="prize" id="prizeText"></div><br>
+      <div class="pointer"></div>
+      <div class="wheel" id="wheel"></div>
+      <button id="spinBtn">🎡 Spin & Win</button>
+      <h3>First Spin is only Valid</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    // Countdown Timer
+    const timer = document.getElementById("timer");
+
+    function getNextRushHour() {
+      const now = new Date();
+      const next = new Date();
+      next.setHours(16, 0, 0, 0); // 4:00 PM
+
+      if (now > next) next.setDate(next.getDate() + 1);
+
+      return next;
+    }
+
+    function updateCountdown() {
+      const now = new Date();
+      const next = getNextRushHour();
+      const diff = next - now;
+
+      const hrs = Math.floor(diff / (1000 * 60 * 60));
+      const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+      timer.textContent =
+        String(hrs).padStart(2, '0') + ":" +
+        String(mins).padStart(2, '0') + ":" +
+        String(secs).padStart(2, '0');
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // Lucky Order Time Highlight
+    const luckyBlock = document.getElementById("luckyTime");
+
+    function checkLuckyTime() {
+      const now = new Date();
+      const h = now.getHours();
+      const m = now.getMinutes();
+
+      if (h === 20 && m >= 30 && m <= 31) {
+        luckyBlock.style.backgroundColor = "#fef9c3";
+        luckyBlock.style.color = "#ca8a04";
+        luckyBlock.textContent = "🎉 It's Lucky Order Time! You could win your order FREE!";
+      } else {
+        luckyBlock.style.backgroundColor = "#e0f2fe";
+        luckyBlock.style.color = "#0284c7";
+        luckyBlock.textContent = "🍀 Order between 8:30 – 8:31 PM and your meal could be FREE! Bee Ready With the Order list !!";
+      }
+    }
+
+    setInterval(checkLuckyTime, 10000);
+    checkLuckyTime();
+
+    // Spin & Win Logic
+    const wheel = document.getElementById("wheel");
+    const btn = document.getElementById("spinBtn");
+    const prizeText = document.getElementById("prizeText");
+
+    const prizes = [
+      "🎉 Free Samosa",
+      "🎉 Free Vadapav",
+      "🎉 Free Kachori ",
+      "🎉 Free Peppy Paneer Pizza "
+    ];
+
+    btn.addEventListener("click", () => {
+      const rotation = 720 + Math.floor(Math.random() * 360);
+      wheel.style.transform = `rotate(${rotation}deg)`;
+
+      // Determine prize
+      const segment = Math.floor(((rotation % 360) / 90));
+      const selectedPrize = prizes[segment];
+      setTimeout(() => {
+        prizeText.textContent = selectedPrize;
+      }, 3000);
+    });
+  </script>
+
+</body>
+</html>

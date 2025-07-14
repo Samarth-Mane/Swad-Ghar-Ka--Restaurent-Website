@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Me</title>
+  <style>
+    :root {
+      --primary: #3b82f6;
+      --text: #1f2937;
+      --background: #f0f4f8;
+      --card-bg: rgba(255, 255, 255, 0.75);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: var(--background);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 960px;
+      background: var(--card-bg);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
+    
+
+    .left, .right {
+      flex: 1 1 300px;
+      padding: 2rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: var(--text);
+      margin-bottom: 1.5rem;
+    }
+
+    .info p {
+      font-size: 1.1rem;
+      margin: 1rem 0;
+    }
+
+    .info a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.75rem 1rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
+      transition: border-color 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: var(--primary);
+      outline: none;
+    }
+
+    button {
+      padding: 0.75rem 1rem;
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2563eb;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Left Info -->
+    <div class="left info">
+      <h2>📬 Contact Info</h2>
+      <p><strong>Phone:</strong> +91-6360928405</p>
+      <p><strong>Email:</strong> <a href="mailto:yourname@example.com">Samarthsmane004@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourname">linkedin.com/in/yourname</a></p>
+    </div>
+
+    <!-- Right Form -->
+    <div class="right">
+      <h2>✉️ Send a Message</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = form.name.value.trim();
+      const email = form.email.value.trim();
+      const message = form.message.value.trim();
+
+      if (!name || !email || !message) {
+        alert('Please fill in all fields.');
+        return;
+      }
+
+      alert(`Thank you ${name}, your message has been received!`);
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="forgot.css">
+</head>
+<body>
+    <div class="forgot">
+        <p style="padding-left: 120px;">Forgot Your Password</p>
+        <p style="padding-left: 20px;">Enter the E-Mail or Phone number to recieve the OTP</p>
+        <input type="email" id="email" placeholder="email / phoneNumber" required class="name">
+        <button onclick="sendResetLink()">Send OTP</button>
+        <p class="message" id="message"></p>
+        <br><br>
+
+    <div class="frgot">
+        <input type="text" id="number1" maxlength="1" placeholder="0">
+        <input type="text" id="number2" maxlength="1" placeholder="0">
+        <input type="text" id="number3" maxlength="1" placeholder="0">
+        <input type="text" id="number4" maxlength="1" placeholder="0">
+        <button class="button" onclick="otp()" >Verify OTP</button>
+        <p class="msg" id="msg"></p>
+        <p>Remembered your password? <a href="resto.html"> Login here</a></p>
+    </div>
+</div>
+
+    <script>
+        function sendResetLink() {
+            let email = document.getElementById('email').value;
+            if(email) {
+                document.getElementById('message').textContent = "The OTP has been sent to " + email;
+            } else {
+                document.getElementById('message').textContent = "Please enter a valid email address.";
+            }
+        }
+        
+        function otp(){
+            let number1 = document.getElementById("number1").value;
+            let number2 = document.getElementById("number2").value;
+            let number3 = document.getElementById("number3").value;
+            let number4 = document.getElementById("number4").value;
+            let enteredOTP = number1 + number2 + number3 + number4;
+            let correctOTP = "1111";
+
+            let msg = document.getElementById("msg");
+
+
+            if (enteredOTP === correctOTP) {
+            msg.textContent = "OTP Verified & New Password is sent to your E-mail";
+            msg.style.color = "green";
+        } else {
+            msg.textContent = "Enter a valid OTP ";
+            msg.style.color = "red";
+        }
+    }
+    </script>
+</body>
+</html>

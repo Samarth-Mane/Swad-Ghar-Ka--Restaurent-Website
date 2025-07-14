@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart | Your Thali</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdf6f0;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    h2 {
+      text-align: center;
+    }
+    .section {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 300px;
+      min-height: 400px;
+    }
+    .item-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+    .item-row button {
+      background-color: red;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      padding: 2px 6px;
+      cursor: pointer;
+    }
+    .pay-btn {
+      margin-top: 15px;
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .pay-btn:hover {
+      background-color: #45a049;
+    }
+    .confirm-msg {
+      color: green;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+    .qr-img {
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+    input[type="text"], input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .clickable-img {
+      width: 250px;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    }
+    #cart button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-weight: bold;
+    }
+    .gov-footer {
+  background-color: #111;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 40px;
+  border-top: 3px solid #444;
+}
+
+.gov-footer a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 6px;
+}
+
+.gov-footer a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+.footer-content {
+  margin-top: 20px;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-logos img {
+  max-height: 40px;
+  object-fit: contain;
+}
+.choose-btn {
+  position: relative;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.choose-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.choose-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.15);
+  transform: skewX(-25deg);
+  transition: left 0.5s ease;
+}
+
+.choose-btn:hover::before {
+  left: 125%;
+}
+
+.choose-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+  </style>
+</head>
+<body>
+
+  
+
+  <!-- Selected Items -->
+  <div class="section" id="cart">
+    <h2>🧺 Selected Items</h2>
+    <div id="cart-items"></div>
+    <p><strong>Total:</strong> ₹<span id="total-amount">0</span></p>
+    <a href="home.html"><button onclick="finalizeOrder()">Select More</button></a>
+
+  </div>
+
+  <!-- Payment -->
+  <div class="section">
+    <h2>💳 Payment</h2>
+    <label>UPI/PhonePay/Paytm ID:</label>
+    <input type="text" id="payment-id" placeholder="user@upi">
+    <label>Phone Number:</label>
+    <input type="number" id="phone" placeholder="Enter your number">
+    <label>Scan and Pay:</label>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/UPI-QR-code-sample.png" alt="QR Code" class="qr-img">
+    <button class="pay-btn" onclick="processPayment()">Pay Now</button>
+    <p id="pay-msg"></p>
+  </div>
+
+  <!-- Order Summary -->
+  <div class="section">
+    <h2>📦 Order Summary</h2>
+    <div id="order-summary">No order placed.</div>
+  </div>
+  </div>
+
+<!-- ✅ Seat Selection Button placed here -->
+<div style="width: 100%; display: flex; justify-content: center; margin-top: 20px;">
+  <button class="choose-btn">
+    <a href="seatselection.html">Choose Seats</a>
+  </button>
+</div>
+
+
+
+
+  <script>
+  let cartItems = JSON.parse(localStorage.getItem("thaliItems")) || [];
+  let total = 0;
+
+  function getDiscountedTotal(total) {
+    let discount = 0;
+    let offerNote = "";
+
+    if (total >= 999) {
+      discount = 0.25;
+      offerNote = "🎉 25% OFF on orders above ₹999!";
+    } else if (total >= 899) {
+      discount = 0.18;
+      offerNote = "🔥 18% OFF on orders above ₹899!";
+    } else if (total >= 799) {
+      discount = 0.15;
+      offerNote = "🔥 15% OFF on orders above ₹799!";
+    } else if (total >= 699) {
+      discount = 0.12;
+      offerNote = "🎉 12% OFF on orders above ₹699!";
+    } else if (total >= 599) {
+      discount = 0;
+      offerNote = "☕ Free Tea or Coffee with your Thali!";
+    } else if (total >= 499) {
+      discount = 0.10;
+      offerNote = "🎉 10% OFF on orders above ₹499!";
+    }
+
+    return { discountAmount: Math.round(total * discount), offerNote };
+  }
+
+  function loadCart() {
+    const cartContainer = document.getElementById("cart-items");
+    cartContainer.innerHTML = "";
+    total = 0;
+
+    cartItems.forEach((item, index) => {
+      const div = document.createElement("div");
+      div.className = "item-row";
+      div.innerHTML = `
+        <span>${item.name} x${item.qty}</span>
+        <span>₹${item.totalPrice}</span>
+        <button onclick="removeItem(${index})">✕</button>
+      `;
+      cartContainer.appendChild(div);
+      total += item.totalPrice;
+    });
+
+    const { discountAmount, offerNote } = getDiscountedTotal(total);
+    const finalTotal = total - discountAmount;
+
+    document.getElementById("total-amount").innerText = `${total} - ₹${discountAmount} = ₹${finalTotal}`;
+
+    if (document.querySelector(".offers")) {
+      document.querySelector(".offers").innerHTML = `<p><strong>${offerNote}</strong></p>`;
+    }
+
+    localStorage.setItem("thaliTotal", finalTotal);
+    localStorage.setItem("thaliDiscount", discountAmount);
+  }
+
+  function removeItem(index) {
+    cartItems.splice(index, 1);
+    localStorage.setItem("thaliItems", JSON.stringify(cartItems));
+    loadCart();
+  }
+
+  function processPayment() {
+    const upi = document.getElementById("payment-id").value;
+    const phone = document.getElementById("phone").value;
+
+    if (!upi || !phone) {
+      document.getElementById("pay-msg").innerText = "❌ Enter valid UPI ID and phone number.";
+      document.getElementById("pay-msg").style.color = 'red';
+      return;
+    }
+
+    const { discountAmount } = getDiscountedTotal(total);
+    const finalTotal = total - discountAmount;
+
+    document.getElementById("pay-msg").innerText = "✅ Payment Successful!";
+    document.getElementById("pay-msg").style.color = 'green';
+
+    const summary = document.getElementById("order-summary");
+    summary.innerHTML = "<ul>" + cartItems.map(i => `<li>${i.qty} x ${i.name} - ₹${i.totalPrice}</li>`).join('') + `</ul><br><strong>Total Paid: ₹${finalTotal}</strong>`;
+
+    localStorage.removeItem("thaliItems");
+    cartItems = [];
+    loadCart();
+  }
+
+  function addToCartFromImage(name, price) {
+    const existing = cartItems.find(i => i.name === name);
+    if (existing) {
+      existing.qty += 1;
+      existing.totalPrice = existing.qty * existing.price;
+    } else {
+      cartItems.push({ name, price, qty: 1, totalPrice: price });
+    }
+    localStorage.setItem("thaliItems", JSON.stringify(cartItems));
+    loadCart();
+  }
+
+  window.onload = loadCart;
+</script>
+<footer class="gov-footer">
+  <div class="footer-top">
+    <a href="#">Copyright Policy</a> /
+    <a href="#">Privacy Policy</a> /
+    <a href="#">Hyperlink Policy</a> /
+    <a href="#">Terms and Conditions</a> /
+    <a href="#">Help</a>
+  </div>
+
+  <div class="footer-content">
+    <p>
+      Content Owned and Maintained by <strong>Swad Ghar Ka</strong><br>
+      Designed, Developed by <a href="#"><strong>Samarth</strong></a><br>
+      <span style="color: #ccc;">Inspired by</span> Modern Indian Hospitality & Cuisine Culture<br>
+      <strong>Last Updated:</strong> July 13, 2025
+    </p>
+
+    <script>
+    function selectTable(el) {
+      document.querySelectorAll('.table-btn').forEach(btn => btn.classList.remove('selected'));
+      el.classList.add('selected');
+      document.getElementById('selectedTable').value = el.textContent.trim();
+    }
+      function toggleSeatSelection() {
+      const section = document.getElementById('seatSection');
+      section.classList.toggle('hidden');
+    }
+  </script>
+  </div>
+    
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in</title>
+    <link rel="stylesheet" href="sign-in.css">
+</head>
+<body>
+    <div class="sign">
+        <p style="text-align: start; font-size:30px; font-family:Garamond;"><b>Sign-in</b></p>
+        <p style="text-align: start; font-size: small;">
+            Don't have an Account Create new Account
+        </p>
+        <div class="details"><br>
+            <div class="input-container">
+                <span>First name</span>
+                <img src="name.jpeg" alt="User Icon">
+                <input type="text" placeholder="First Name">
+            </div>  
+            <div class="input-container">
+                <span>Last name</span>
+                <img src="name.jpeg" alt="User Icon">
+                <input type="text" placeholder="Last Name">
+            </div>       
+            <div class="input-container">
+                <span>Email Address</span>
+                <img src="email1.jpeg" alt="User Icon">
+                <input type="email" placeholder="Email">
+            </div> 
+            <div class="input-container">
+                <span>Password</span>
+                <img src="password.jpeg" alt="User Icon">
+                <input type="password" id="pass" placeholder="Password">
+            </div>
+            <div class="input-container">
+                <span>Confirm Password</span>
+                <img src="password.jpeg" alt="User Icon">
+                <input type="password" id="pass1" placeholder="Confirm Password">
+            </div>  
+            <p class="msg" id="msg"></p>                                                
+        <button onclick="check()" type="submit" class="submit-btn">Sign-Up</button><br>
+
+        <p style="text-align:center"> Or Sign-in With.</p><br>
+        <div class="img" >
+            <button style="border-radius: 2px;">
+            <a href="www.google.com"><img src="https://static.vecteezy.com/system/resources/previews/013/760/951/non_2x/colourful-google-logo-in-dark-background-free-vector.jpg" alt="Google" style="height: 25px; width: 25px; background-color: aqua; margin-top: 4px;"></a>
+            <span style=" border-radius: 5px; font-size: 18px; top: 12px;">Google</span></button>
+            <button style="border-radius: 2px;">
+            <a href="http://www.facebook.com/"><img src="https://1.bp.blogspot.com/-AoUqLhc-7Bg/Xyq1zDdXjaI/AAAAAAAABn8/WmSTA1WKDf0wl5-9qbSEtfnTwHJ7SKMtwCLcBGAsYHQ/s886/Facebook%2B%255Bblogovector.com%255D.png" alt="Facebook" style="height: 25px; width: 25px; background-color: aqua; margin-top: 4px;"></a>
+            <span style="border-radius: 5px; font-size: 18px;">Facebook</span></button>
+            <button style="border-radius: 2px;">
+            <a href="www.x.com"><img src="https://static.vecteezy.com/system/resources/previews/027/395/710/original/twitter-brand-new-logo-3-d-with-new-x-shaped-graphic-of-the-world-s-most-popular-social-media-free-png.png" alt="X(Twitter)" style="height: 25px; width: 25px; margin-top: 4px;"></a>
+            <span style="border-radius: 5px; font-size: 18px;">X/Twitter</span></button>
+        </div>
+        </div>
+    </div>
+
+    <script>
+            function check() {
+            let pass = document.getElementById("pass").value.trim();
+            let pass1 = document.getElementById("pass1").value.trim();
+            let msg = document.getElementById("msg"); 
+            if (pass === "" || pass1 === "") {
+                msg.textContent = "Fields cannot be empty!";
+                msg.style.color = "orange";
+            } else if (pass !== pass1) {
+                msg.textContent = "Password and Confirm Password do not match!";
+                msg.style.color = "red"; 
+            } else {
+                msg.textContent = "";
+                msg.style.color = "green"; 
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

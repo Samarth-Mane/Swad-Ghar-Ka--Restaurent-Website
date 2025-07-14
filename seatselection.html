@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Table Reservation | Modern Dine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .table-btn {
+      position: relative;
+      background-color: #f3f4f6;
+      padding: 1.5rem;
+      border-radius: 12px;
+      text-align: center;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .table-btn:hover {
+      background-color: #e0f2fe;
+      border-color: #60a5fa;
+      transform: translateY(-2px);
+    }
+    .table-btn.selected {
+      background-color: #4f46e5;
+      color: white;
+      border-color: #4338ca;
+      box-shadow: 0 0 10px rgba(99, 102, 241, 0.6);
+    }
+    .table-btn.unavailable {
+      background-color: #9ca3af;
+      color: white;
+      pointer-events: none;
+      cursor: not-allowed;
+      text-decoration: line-through;
+      opacity: 0.6;
+    }
+    .tooltip {
+      position: absolute;
+      bottom: 105%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #1f2937;
+      color: #f9fafb;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      white-space: nowrap;
+      display: none;
+      z-index: 10;
+      box-shadow: 0 0 12px rgba(99, 102, 241, 0.8);
+      transition: all 0.3s ease;
+    }
+    .table-btn:hover .tooltip {
+      display: block;
+      animation: glow 0.6s ease-in-out infinite alternate;
+    }
+    @keyframes glow {
+      0% {
+        box-shadow: 0 0 6px rgba(99, 102, 241, 0.4);
+      }
+      100% {
+        box-shadow: 0 0 12px rgba(99, 102, 241, 0.9);
+      }
+    }
+    .gov-footer {
+  background-color: #111;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 40px;
+  border-top: 3px solid #444;
+}
+
+.gov-footer a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 6px;
+}
+
+.gov-footer a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+.footer-content {
+  margin-top: 20px;
+}
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-[Inter]">
+  <header class="text-center py-12 bg-gradient-to-r from-purple-700 to-indigo-800 shadow-md">
+    <h1 class="text-4xl md:text-5xl font-bold mb-2">🍽️ Reserve Your Table</h1>
+    <p class="text-indigo-100 text-lg">Modern dining made easier with online booking</p>
+  </header>
+
+  <main class="max-w-4xl mx-auto bg-white text-gray-800 mt-[-4rem] rounded-xl p-10 shadow-2xl relative z-10">
+    <h2 class="text-2xl font-semibold text-center text-indigo-800 mb-8">Reservation Form</h2>
+    <form class="space-y-6">
+      <!-- Form Fields -->
+      <!-- (unchanged for brevity) -->
+
+      <div>
+        <label class="block text-lg font-semibold text-indigo-800 mb-3">Select a Table</label>
+        <div class="grid grid-cols-4 gap-6">
+          <div class="table-btn" onclick="selectTable(this)">T-A1<span class="tooltip">Seats 2 people</span></div>
+          <div class="table-btn" onclick="selectTable(this)">T-A2<span class="tooltip">Seats 6 people</span></div>
+          <div class="table-btn unavailable">T-A3<span class="tooltip">Unavailable</span></div>
+          <div class="table-btn" onclick="selectTable(this)">T-A4<span class="tooltip">Seats 2 people</span></div>
+          <div class="table-btn" onclick="selectTable(this)">T-B1<span class="tooltip">Seats 16 people</span></div>
+          <div class="table-btn" onclick="selectTable(this)">T-B2<span class="tooltip">Seats 8s people</span></div>
+          <div class="table-btn unavailable">T-B3<span class="tooltip">Unavailable</span></div>
+          <div class="table-btn" onclick="selectTable(this)">T-B4<span class="tooltip">Seats 4 people</span></div>
+          <div class="table-btn" onclick="selectTable(this)">T-C1<span class="tooltip">Seats 2 people</span></div>
+          <div class="table-btn unavailable">T-C2<span class="tooltip">Unavailable</span></div>
+          <div class="table-btn" onclick="selectTable(this)">T-C3<span class="tooltip">Seats 4 people</span></div>
+          <div class="table-btn" onclick="selectTable(this)">T-C4<span class="tooltip">Seats 10 people</span></div>
+        </div>
+        <input type="hidden" name="selectedTable" id="selectedTable" />
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="bg-gradient-to-r from-indigo-600 to-purple-700 text-white font-semibold px-10 py-3 rounded-full shadow-lg hover:scale-105 transition-transform">Reserve Now</button>
+      </div>
+    </form>
+  </main>
+
+
+  <script>
+    function selectTable(el) {
+      document.querySelectorAll('.table-btn').forEach(btn => btn.classList.remove('selected'));
+      el.classList.add('selected');
+      document.getElementById('selectedTable').value = el.textContent.trim();
+    }
+  </script>
+
+  <footer class="gov-footer">
+  <div class="footer-top">
+    <a href="#">Copyright Policy</a> /
+    <a href="#">Privacy Policy</a> /
+    <a href="#">Hyperlink Policy</a> /
+    <a href="#">Terms and Conditions</a> /
+    <a href="#">Help</a>
+  </div>
+
+  <div class="footer-content">
+    <p>
+      Content Owned and Maintained by <strong>Swad Ghar Ka</strong><br>
+      Designed, Developed by <a href="#"><strong>Samarth</strong></a><br>
+      <span style="color: #ccc;">Inspired by</span> Modern Indian Hospitality & Cuisine Culture<br>
+      <strong>Last Updated:</strong> July 13, 2025
+    </p>
+  </div>
+  </footer>
+</body>
+</html>
