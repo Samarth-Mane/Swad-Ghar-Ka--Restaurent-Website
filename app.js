@@ -1,24 +1,44 @@
-const express = require('express');
+const http = require('http')
+const fs = require('fs');
 const path = require('path');
-const app = express();
-const PORT = 3000;
 
-// Serve static files (like CSS, JS)
-app.use(express.static('views'));
 
-// Parse form data (optional)
-app.use(express.urlencoded({ extended: true }));
-
-// Routes
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'signin.html'));
+let server = http.createServer((req,res)=>{
+res.setHeader('Content-Type','text/html');
+res.setHeader('Content-Type','text/css');
+    let path = '';
+    switch(req.url){
+        case '/':
+            path+='resto.html';
+            break;
+        case '/signin':
+            path+='signin.html';
+            break;
+        case '/about':
+            path+='about.html';
+            break;
+        case '/contact_us':
+            path+='contact.html';
+            break;
+        case '/rush_hours':
+            path+='rush.html';
+            break;    
+        default:
+            res.statusCode = 404;
+            break;
+    }
+fs.readFile(path,(err,data)=>{
+        if(err){
+            console.log(err);
+            res.end();
+        }else{
+            res.write(data); 
+            res.end();
+        }
+    });
 });
 
-app.post('/dashboard', (req, res) => {
-  // You can process form data here using req.body if needed
-  res.sendFile(path.join(__dirname, 'views', 'dashboard.html'));
+server.listen(3000,'localhost',()=>{
+    console.log("listning to the event");
 });
-
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
+server.listen("8000")
