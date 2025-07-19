@@ -5,7 +5,6 @@ const path = require('path');
 
 let server = http.createServer((req,res)=>{
 res.setHeader('Content-Type','text/html');
-res.setHeader('Content-Type','text/css');
     let path = '';
     switch(req.url){
         case '/':
@@ -22,7 +21,10 @@ res.setHeader('Content-Type','text/css');
             break;
         case '/rush_hours':
             path+='rush.html';
-            break;    
+            break;
+        case '/home':
+            path+='home.html';
+            break;        
         default:
             res.statusCode = 404;
             break;
