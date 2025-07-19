@@ -39,5 +39,12 @@ This hybrid model is designed for small restaurants, cloud kitchens, and modern 
 
 <img width="1889" height="1040" alt="image" src="https://github.com/user-attachments/assets/fa928cbc-7a8b-4137-894b-272fa046991b" />
 
+Home Page of my Website - 
+
+
+Customizable Thali - 
+<img width="1885" height="1051" alt="image" src="https://github.com/user-attachments/assets/068946ca-1a42-4cff-96d7-358eb32d4288" />
+
+
 
 
