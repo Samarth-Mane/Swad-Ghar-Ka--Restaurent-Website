@@ -44,7 +44,7 @@ Sign-in page -
 <img width="1907" height="1040" alt="image" src="https://github.com/user-attachments/assets/095f2b2c-5f96-4437-80f9-9b7eee0e257f" />
 
 Home Page of my Website - 
-
+https://github.com/user-attachments/assets/43c9e204-800b-4404-b9b7-188d847dadf2
 
 Customizable Thali - 
 <img width="1885" height="1051" alt="image" src="https://github.com/user-attachments/assets/068946ca-1a42-4cff-96d7-358eb32d4288" />
@@ -65,8 +65,18 @@ Mess Section -
 <img width="1917" height="991" alt="image" src="https://github.com/user-attachments/assets/b428122d-3b06-4c9e-8391-1d005c55dd7c" />
 
 About & Contact Section - 
-<img width="1910" height="1040" alt="image" src="https://github.com/user-attachments/assets/78cac523-0d2b-4ea6-90c7-da2cdce14d9d" />
-<img width="1908" height="1037" alt="image" src="https://github.com/user-attachments/assets/d1b630dd-2972-4879-85b0-15eb6ea5c7f5" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/78cac523-0d2b-4ea6-90c7-da2cdce14d9d" width="47%" />
+  <img src="https://github.com/user-attachments/assets/d1b630dd-2972-4879-85b0-15eb6ea5c7f5" width="47%" />
+</p>
+
+Review Section - 
+<img width="1888" height="1032" alt="image" src="https://github.com/user-attachments/assets/6021f513-85f0-4174-9022-9b77f8ccd641" />
+
+
+
+
+
 
 
 
