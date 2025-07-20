@@ -37,13 +37,47 @@ This hybrid model is designed for small restaurants, cloud kitchens, and modern 
 
 📸 Visual Experience of Swad Ghar Ka
 
+Login page - 
 <img width="1889" height="1040" alt="image" src="https://github.com/user-attachments/assets/fa928cbc-7a8b-4137-894b-272fa046991b" />
+
+Sign-in page - 
+<img width="1907" height="1040" alt="image" src="https://github.com/user-attachments/assets/095f2b2c-5f96-4437-80f9-9b7eee0e257f" />
 
 Home Page of my Website - 
 
 
 Customizable Thali - 
 <img width="1885" height="1051" alt="image" src="https://github.com/user-attachments/assets/068946ca-1a42-4cff-96d7-358eb32d4288" />
+
+Rush Hours and Spin and Win section - 
+<img width="1873" height="1036" alt="image" src="https://github.com/user-attachments/assets/b73cd686-500f-4449-928a-be7d2db12822" />
+
+Cart - Section -
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/33c56fc4-c09c-488a-b8ec-f455bbe003c8" width="47%" />
+  <img src="https://github.com/user-attachments/assets/059f452f-e39d-4275-bd4a-4410d1f236d1" width="47%" />
+</p>
+
+**Table Selection** - 
+<img width="1886" height="1043" alt="image" src="https://github.com/user-attachments/assets/0c5f9fe4-1fa1-4090-9be0-d626b8a2563f" />
+
+Mess Section - 
+<img width="1917" height="991" alt="image" src="https://github.com/user-attachments/assets/b428122d-3b06-4c9e-8391-1d005c55dd7c" />
+
+About & Contact Section - 
+<img width="1910" height="1040" alt="image" src="https://github.com/user-attachments/assets/78cac523-0d2b-4ea6-90c7-da2cdce14d9d" />
+<img width="1908" height="1037" alt="image" src="https://github.com/user-attachments/assets/d1b630dd-2972-4879-85b0-15eb6ea5c7f5" />
+
+
+
+
+
+
+
+
+
+
+
 
 
 
