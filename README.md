@@ -1,4 +1,4 @@
-<img width="1877" height="895" alt="image" src="https://github.com/user-attachments/assets/29243fdc-517a-4855-8bc0-8adf74617f59" />🍲 Swad Ghar Ka – Smart and Simple Food Ordering & Table Reservation System
+🍲 Swad Ghar Ka – Smart and Simple Food Ordering & Table Reservation System
 
 **Swad Ghar Ka** is a full-featured online food ordering and reservation system. It caters to both:
 - 🏠 Customers who want to order food online and get it delivered
@@ -44,11 +44,16 @@ Sign-in page -
 <img width="1907" height="1040" alt="image" src="https://github.com/user-attachments/assets/095f2b2c-5f96-4437-80f9-9b7eee0e257f" />
 
 Home Page of my Website - 
-<img width="1887" height="883" alt="Screenshot 2025-07-20 161513" src="https://github.com/user-attachments/assets/1f80632f-63d8-4fd1-bc28-a3c43ca59cdd" />
-<img width="1885" height="881" alt="Screenshot 2025-07-20 161531" src="https://github.com/user-attachments/assets/b6ca2af8-ba9f-4dcd-a68f-26692139d30a" />
-<img width="1886" height="906" alt="Screenshot 2025-07-20 161555" src="https://github.com/user-attachments/assets/a22a6b2c-fc0f-4ea8-90bf-af0d3ff32a28" />
-<img width="1880" height="900" alt="Screenshot 2025-07-20 161615" src="https://github.com/user-attachments/assets/2bb9fae6-c0ed-459d-b375-1eb8eb4b761e" />
-<img width="1877" height="895" alt="Screenshot 2025-07-20 161640" src="https://github.com/user-attachments/assets/6beac008-865d-4b50-ad7e-a6b5455f77f1" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1f80632f-63d8-4fd1-bc28-a3c43ca59cdd" width="32%" />
+  <img src="https://github.com/user-attachments/assets/b6ca2af8-ba9f-4dcd-a68f-26692139d30a" width="32%" />
+  <img src="https://github.com/user-attachments/assets/a22a6b2c-fc0f-4ea8-90bf-af0d3ff32a28" width="32%" />
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2bb9fae6-c0ed-459d-b375-1eb8eb4b761e" width="48%" />
+  <img src="https://github.com/user-attachments/assets/6beac008-865d-4b50-ad7e-a6b5455f77f1" width="48%" />
+</p>
+
 
 
 
