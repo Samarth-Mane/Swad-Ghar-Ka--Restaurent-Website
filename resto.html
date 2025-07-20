@@ -212,7 +212,7 @@ a.no-underline {
             <input type="text" placeholder="Mobile Number" required>
             <input type="password" placeholder="Password" required>
             <a href="home.html" class="no-underline">
-            <button type="submit" class="submit-btn" id="submits">
+            <button onclick="check()" type="submit" class="submit-btn" id="submits">
               Login
             <img src="https://toppng.com/uploads/preview/free-ready-to-eat-emoji-ready-to-eat-emoji-11563208911mwpatzpxke.png" 
             alt="Food Symbol" style="width: 20px; height: 20px; vertical-align: middle; margin-left: 8px;">
@@ -242,7 +242,12 @@ a.no-underline {
       <strong>Last Updated:</strong> July 13, 2025
     </p>
 
-    
+    <script>
+      function check(){
+         alert("Log-in successfully Completed!!");
+        window.location.href = "home.html"; 
+      }
+    </script>
   </div>
 </footer>
 

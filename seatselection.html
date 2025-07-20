@@ -67,30 +67,27 @@
       }
     }
     .gov-footer {
-  background-color: #111;
-  color: white;
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 14px;
-  padding: 30px 20px;
-  text-align: center;
-  margin-top: 40px;
-  border-top: 3px solid #444;
-}
-
-.gov-footer a {
-  color: #ccc;
-  text-decoration: none;
-  margin: 0 6px;
-}
-
-.gov-footer a:hover {
-  color: orange;
-  text-decoration: underline;
-}
-
-.footer-content {
-  margin-top: 20px;
-}
+      background-color: #111;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 14px;
+      padding: 30px 20px;
+      text-align: center;
+      margin-top: 40px;
+      border-top: 3px solid #444;
+    }
+    .gov-footer a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 6px;
+    }
+    .gov-footer a:hover {
+      color: orange;
+      text-decoration: underline;
+    }
+    .footer-content {
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body class="bg-white text-gray-800 font-[Inter]">
@@ -99,63 +96,125 @@
     <p class="text-indigo-100 text-lg">Modern dining made easier with online booking</p>
   </header>
 
-  <main class="max-w-4xl mx-auto bg-white text-gray-800 mt-[-4rem] rounded-xl p-10 shadow-2xl relative z-10">
+  <main class="max-w-4xl mx-auto bg-white text-gray-800 mt-8 rounded-xl p-10 shadow-2xl relative z-10">
     <h2 class="text-2xl font-semibold text-center text-indigo-800 mb-8">Reservation Form</h2>
-    <form class="space-y-6">
-      <!-- Form Fields -->
-      <!-- (unchanged for brevity) -->
+    <form class="space-y-6" onsubmit="return validateReservation()">
+      <div>
+        <label for="name" class="block text-lg font-semibold text-indigo-800 mb-2">Name</label>
+        <input type="text" id="name" name="name" required
+          class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-600" />
+      </div>
+
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <label for="startTime" class="block text-lg font-semibold text-indigo-800 mb-2">Start Time</label>
+          <input type="time" id="startTime" name="startTime" required
+            class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-600" />
+        </div>
+        <div>
+          <label for="endTime" class="block text-lg font-semibold text-indigo-800 mb-2">End Time</label>
+          <input type="time" id="endTime" name="endTime" required
+            class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-600" />
+        </div>
+      </div>
 
       <div>
         <label class="block text-lg font-semibold text-indigo-800 mb-3">Select a Table</label>
         <div class="grid grid-cols-4 gap-6">
           <div class="table-btn" onclick="selectTable(this)">T-A1<span class="tooltip">Seats 2 people</span></div>
           <div class="table-btn" onclick="selectTable(this)">T-A2<span class="tooltip">Seats 6 people</span></div>
-          <div class="table-btn unavailable">T-A3<span class="tooltip">Unavailable</span></div>
+          <div class="table-btn" onclick="selectTable(this)">T-A3<span class="tooltip">Seats 4 people</span></div>
           <div class="table-btn" onclick="selectTable(this)">T-A4<span class="tooltip">Seats 2 people</span></div>
           <div class="table-btn" onclick="selectTable(this)">T-B1<span class="tooltip">Seats 16 people</span></div>
-          <div class="table-btn" onclick="selectTable(this)">T-B2<span class="tooltip">Seats 8s people</span></div>
-          <div class="table-btn unavailable">T-B3<span class="tooltip">Unavailable</span></div>
+          <div class="table-btn" onclick="selectTable(this)">T-B2<span class="tooltip">Seats 8 people</span></div>
+          <div class="table-btn" onclick="selectTable(this)">T-B3<span class="tooltip">Seats 6 people</span></div>
           <div class="table-btn" onclick="selectTable(this)">T-B4<span class="tooltip">Seats 4 people</span></div>
-          <div class="table-btn" onclick="selectTable(this)">T-C1<span class="tooltip">Seats 2 people</span></div>
-          <div class="table-btn unavailable">T-C2<span class="tooltip">Unavailable</span></div>
-          <div class="table-btn" onclick="selectTable(this)">T-C3<span class="tooltip">Seats 4 people</span></div>
-          <div class="table-btn" onclick="selectTable(this)">T-C4<span class="tooltip">Seats 10 people</span></div>
         </div>
         <input type="hidden" name="selectedTable" id="selectedTable" />
       </div>
 
       <div class="text-center">
-        <button type="submit" class="bg-gradient-to-r from-indigo-600 to-purple-700 text-white font-semibold px-10 py-3 rounded-full shadow-lg hover:scale-105 transition-transform">Reserve Now</button>
+        <button id="reserveBtn" type="submit"
+          class="hidden bg-gradient-to-r from-indigo-600 to-purple-700 text-white font-semibold px-10 py-3 rounded-full shadow-lg hover:scale-105 transition-transform">
+          Reserve Now
+        </button>
       </div>
     </form>
   </main>
 
+  <footer class="gov-footer">
+    <div class="footer-top">
+      <a href="#">Copyright Policy</a> /
+      <a href="#">Privacy Policy</a> /
+      <a href="#">Hyperlink Policy</a> /
+      <a href="#">Terms and Conditions</a> /
+      <a href="#">Help</a>
+    </div>
+
+    <div class="footer-content">
+      <p>
+        Content Owned and Maintained by <strong>Swad Ghar Ka</strong><br>
+        Designed, Developed by <a href="#"><strong>Samarth</strong></a><br>
+        <span style="color: #ccc;">Inspired by</span> Modern Indian Hospitality & Cuisine Culture<br>
+        <strong>Last Updated:</strong> July 20, 2025
+      </p>
+    </div>
+  </footer>
 
   <script>
+    // Load existing reservations
+    document.addEventListener("DOMContentLoaded", () => {
+      const reservations = JSON.parse(localStorage.getItem("tableReservations") || "[]");
+      reservations.forEach(res => {
+        const btn = Array.from(document.querySelectorAll(".table-btn")).find(el =>
+          el.textContent.trim().startsWith(res.table)
+        );
+        if (btn) {
+          btn.classList.add("unavailable");
+          btn.innerHTML = res.table + `<span class="tooltip">Reserved by ${res.name} (${res.startTime} - ${res.endTime})</span>`;
+        }
+      });
+    });
+
     function selectTable(el) {
+      if (el.classList.contains("unavailable")) return;
       document.querySelectorAll('.table-btn').forEach(btn => btn.classList.remove('selected'));
       el.classList.add('selected');
       document.getElementById('selectedTable').value = el.textContent.trim();
+      document.getElementById('reserveBtn').classList.remove('hidden');
+    }
+
+    function validateReservation() {
+      const name = document.getElementById('name').value;
+      const selectedTable = document.getElementById('selectedTable').value;
+      const startTime = document.getElementById('startTime').value;
+      const endTime = document.getElementById('endTime').value;
+
+      if (!selectedTable || !startTime || !endTime || !name) {
+        alert("Please fill out all fields.");
+        return false;
+      }
+
+      if (startTime >= endTime) {
+        alert("End time must be after start time.");
+        return false;
+      }
+
+      const newRes = {
+        name,
+        table: selectedTable,
+        startTime,
+        endTime
+      };
+
+      const allRes = JSON.parse(localStorage.getItem("tableReservations") || "[]");
+      allRes.push(newRes);
+      localStorage.setItem("tableReservations", JSON.stringify(allRes));
+
+      alert(`Reservation confirmed for ${selectedTable} from ${startTime} to ${endTime}.`);
+      location.reload();
+      return false; // Prevent real form submit
     }
   </script>
-
-  <footer class="gov-footer">
-  <div class="footer-top">
-    <a href="#">Copyright Policy</a> /
-    <a href="#">Privacy Policy</a> /
-    <a href="#">Hyperlink Policy</a> /
-    <a href="#">Terms and Conditions</a> /
-    <a href="#">Help</a>
-  </div>
-
-  <div class="footer-content">
-    <p>
-      Content Owned and Maintained by <strong>Swad Ghar Ka</strong><br>
-      Designed, Developed by <a href="#"><strong>Samarth</strong></a><br>
-      <span style="color: #ccc;">Inspired by</span> Modern Indian Hospitality & Cuisine Culture<br>
-      <strong>Last Updated:</strong> July 13, 2025
-    </p>
-  </div>
-  </footer>
 </body>
 </html>
