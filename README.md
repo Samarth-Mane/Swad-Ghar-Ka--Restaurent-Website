@@ -11,11 +11,11 @@ This hybrid model is designed for small restaurants, cloud kitchens, and modern 
 🔧 Tech Stack
 
 | **HTML5**,      |
-|-----------------|
+
 | **CSS3**,       |
-|-----------------|
+
 | **JavaScript**, |
-|-----------------|
+
 
 ---
 
