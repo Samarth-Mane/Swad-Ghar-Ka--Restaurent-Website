@@ -14,7 +14,7 @@ This hybrid model is designed for small restaurants, cloud kitchens, and modern 
 |-----------------|
 | **CSS3**,       |
 |-----------------|
-| **JavaScript**  |
+| **JavaScript**, |
 |-----------------|
 
 ---
