@@ -42,7 +42,7 @@ https://swad-ghar-ka-website-by-samarth.onrender.com
 📸 Visual Experience of Swad Ghar Ka
 
 Login page - 
-<img width="1889" height="1040" alt="image" src="https://github.com/user-attachments/assets/fa928cbc-7a8b-4137-894b-272fa046991b" />
+<img width="1915" height="1040" alt="image" src="https://github.com/user-attachments/assets/40b49c97-71f0-4122-93a7-5e095616516f" />
 
 Sign-in page - 
 <img width="1907" height="1040" alt="image" src="https://github.com/user-attachments/assets/095f2b2c-5f96-4437-80f9-9b7eee0e257f" />
