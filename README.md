@@ -10,12 +10,12 @@ This hybrid model is designed for small restaurants, cloud kitchens, and modern 
 
 🔧 Tech Stack
 
-| Frontend - HTML5, CSS3, JavaScript
-|--------------------------------------|
-| Backend -  Node.js, Express.js 
-|--------------------------------------|
-| Database - MongoDB 
-|--------------------------------------|
+| **HTML5**,      |
+|-----------------|
+| **CSS3**,       |
+|-----------------|
+| **JavaScript**  |
+|-----------------|
 
 ---
 
@@ -41,7 +41,7 @@ https://swad-ghar-ka-website-by-samarth.onrender.com
 
 📸 Visual Experience of Swad Ghar Ka
 
-Login page - 
+Landing page - 
 <img width="1915" height="1040" alt="image" src="https://github.com/user-attachments/assets/40b49c97-71f0-4122-93a7-5e095616516f" />
 
 Sign-in page - 
