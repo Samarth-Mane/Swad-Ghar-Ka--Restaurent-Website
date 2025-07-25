@@ -40,11 +40,12 @@
         .head {
             display: flex;
             gap: 15px;
+            background-color: transparent;
             padding-right: 50px;
             
         }
         header{
-            padding: 20px; background-color: #ffffff;
+            padding: 20px; background-color:transparent;
         }
         .links a {
             color: black;
@@ -126,13 +127,14 @@
         }
 
 .gov-footer {
+
   background-color: #111;
   color: white;
   font-family: 'Segoe UI', sans-serif;
   font-size: 14px;
   padding: 30px 20px;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 36%;
   border-top: 3px solid #444;
 }
 
@@ -183,6 +185,73 @@ a.no-underline {
 .submit-btn img {
   margin-left: 8px;
 }
+
+/* Overlay container */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+/* Glassmorphism card */
+.welcome-card {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  padding: 40px 50px;
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+  max-width: 700px;
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.4);
+  transform: scale(0.95);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.welcome-card h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.welcome-card h1 span {
+  color: orange;
+}
+
+.welcome-card p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Button */
+.hero-btn {
+  text-decoration: none;
+  padding: 12px 25px;
+  background: orange;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: 0.4s ease;
+  font-size: 1rem;
+}
+
+.hero-btn:hover {
+  background: #ff7300;
+  box-shadow: 0 0 10px #ff7300;
+}
+
+/* Animation */
+.animate.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
 </style>
 </head>
 <body>
@@ -200,12 +269,12 @@ a.no-underline {
     </header>
 
     
-
+    <!--
     <div class="login-container">
 
         <div class="overlay">
         </div>
-
+        
         <form class="login-form">
             <h2>Quench the hunger</h2>
             <input type="text"  placeholder="User_Id" required>
@@ -223,7 +292,17 @@ a.no-underline {
             <h5>Do not have Account-<a href="signin.html" style="color: crimson; font-size: 15px;">Create Account</a></h5>
         </form>
     </div>
+-->
+    <div class="overlay">
+  <div class="welcome-card animate">
+    <h1>Welcome to <span>Swad Ghar Ka</span></h1>
+    <p>Home-style Indian Food made with love and tradition 🍛</p>
+    <a href="home.html" class="hero-btn">Explore Menu</a>
+  </div>
+</div>
 
+
+  
 </script>
 <footer class="gov-footer">
   <div class="footer-top">
@@ -239,7 +318,7 @@ a.no-underline {
       Content Owned and Maintained by <strong>Swad Ghar Ka</strong><br>
       Designed, Developed by <a href="#"><strong>Samarth</strong></a><br>
       <span style="color: #ccc;">Inspired by</span> Modern Indian Hospitality & Cuisine Culture<br>
-      <strong>Last Updated:</strong> July 13, 2025
+      <strong>Last Updated:</strong> July 25, 2025
     </p>
 
     <script>
@@ -250,6 +329,16 @@ a.no-underline {
     </script>
   </div>
 </footer>
+<script>
+  // Fade-in effect on page load
+  window.addEventListener('DOMContentLoaded', () => {
+    const card = document.querySelector('.welcome-card');
+    setTimeout(() => {
+      card.classList.add('visible');
+    }, 3000); // Delay to feel smooth
+  });
+</script>
+
 
 </body>
 </html>
