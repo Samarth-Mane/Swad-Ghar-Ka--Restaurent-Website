@@ -17,7 +17,7 @@
                 <div class="links"><a href="contact.html">Contact</a></div>
                 <div class="links"><a href="rush.html">Rush_Hours</a></div>
                 <div class="links"><a href="mess.html">Mess_Section</a></div>
-                <div class="link"><a href="orderdet.html" style="margin:0%;"><img src="lunch/cart.jpg" alt="Add To Cart" style="height: 32px; width: 32px; border: 0.5 crimson solid; margin-bottom: 12px; border-radius: 50%; background-color: grey;"></a></div>
+        <div class="link"><a href="orderdet.html" style="margin:0%;"><img src="lunch/cart.jpg" alt="Add To Cart" style="height: 32px; width: 32px; border: 0.5 crimson solid; margin-bottom: 12px; border-radius: 50%; background-color: grey;"></a></div>
                 <!---<div class="links" style=" height: 2px; width: 2px; border-radius: 50px; border: 2px black solid;"><img src="images/cart.png" alt="Cart"></div>--->
             </div>
         </div>
@@ -842,6 +842,7 @@ function toggleTheme() {
   </div>
 </div>
 
+
 <script>
   window.onload = function () {
     const popup = document.getElementById("popupp");
@@ -897,6 +898,15 @@ function toggleTheme() {
       }
     };
   };
+</script>
+<script>
+document.getElementById('cartIcon').addEventListener('click', () => {
+  document.getElementById('cartPreview').classList.toggle('show');
+});
+function renderCart() {
+  const items = JSON.parse(localStorage.getItem('cart') || '[]');
+  // populate #cartItems and update count & total
+}
 </script>
 
 
